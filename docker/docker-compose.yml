@@ -1,0 +1,19 @@
+version: '2'
+services:
+  data:
+    container_name: data
+    image: busybox
+    volumes:
+      - ../www:/www
+  web:
+    container_name: web
+    image: httpd:alpine
+    volumes:
+      - ../www/html:/usr/local/apache2/htdocs
+    ports:
+      - "80:80"
+  node:
+    container_name: node
+    build: ./node
+    volumes_from:
+      - data

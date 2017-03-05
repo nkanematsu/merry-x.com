@@ -1,0 +1,116 @@
+@charset "UTF-8";
+html,
+body { margin:0; padding:0;font-family: "Meiryo","メイリオ","Hiragino Kaku Gothic Pro W3","ヒラギノ角ゴ Pro W3", "Osaka","MS UI Gothic";}
+body { background:url(img/bg.jpg);}
+img {border:0;}
+
+#Wrapper { width:770px; margin:0 auto; padding:0 5px; border:1px solid #369; border-top:none; background:#fff;}
+#Header { margin-bottom:5px;height:100px; background:url(img/head.jpg);}
+#Header h1 { margin:0; padding:3px; font-size:11px; color:#fff; text-align:right;}
+
+h2 { background:url(img/h2.jpg) no-repeat; margin:0 0 5px; padding:0; height:62px; text-indent:-9999px; overflow:hidden;}
+h2.office {}
+h2.wax {background-position:0 -62px;}
+h2.carpet {background-position:0 -124px;}
+h2.house {background-position:0 -186px;}
+h2.work {background-position:0 -248px;}
+h2.cad {background-position:0 -310px;}
+h2.corp {background-position:0 -372px;}
+h2.contact {background-position:0 -434px;}
+h2.privacy {background-position:0 -496px;}
+
+h3 {font-size:14px; padding:4px; margin:15px 10px; border:1px solid #ddd; font-weight:normal; line-height:130%;}
+h4 { border-left:3px solid #369; margin:10px 15px; padding:2px 0 2px 5px; font-size:14px; background:url(img/dbar.jpg) repeat-x #EDF3F6; background-position:left bottom; clear:both;}
+h5 { border-left:3px solid #f60; margin:10px 15px 10px 20px; padding:0 0 0 5px; font-size:14px; font-weight: normal; }
+
+#Navi {margin:0 ; padding:0 0 0 5px; width:190px; float:left; color:#444;}
+#Navi ul {margin:0; padding:0; list-style:none;}
+#Navi ul li {margin:0; padding:0; display:inline; font-size:1px; line-height:1px;}
+
+#Navi ol {margin:0; padding:0 0 3px 20px; list-style:none;}
+#Navi ol li {margin:2px 0; padding:0; font-size:1%; line-height:1%;}
+#Navi p.addr {font-size:11px; margin:10px 15px;}
+#inBox { padding-right:5px; float:right; width:560px;}
+#Links {clear:both; padding:5px; font-size:10px; text-align:center;color:#999;}
+#Links a {text-decoration:none; padding:0 3px; }
+#Links a:active,
+#Links a:visited,
+#Links a:link {text-decoration:none; color:#369;}
+#Links a:focus,
+#Links a:hover {text-decoration:underline; color:}
+
+
+#Footer {text-align:center; font-size:10px; font-family:Geneva, Arial, Helvetica, sans-serif; color:#666; padding:5px;}
+
+.topImages {text-align:center; margin:0 5px 10px; border-top:3px solid #999; border-bottom:3px solid #999;}
+.topImages2 {text-align:center; margin:0 0 10px; border-top:3px solid #999; border-bottom:3px solid #999;}
+
+
+p.bar {margin:8px 0; padding:0; text-align:center;}
+
+table.contNav {margin:10px 0;}
+table.formTbl { width:90%; margin:10px auto; background:#f5f5f5; font-size:13px; border:1px solid #ddd;}
+table.formTbl th { text-align:right; background:#eee; border-right:4px solid #369; padding-right:8px; }
+table.formTbl td { background:#fff;}
+
+table.formTbl td input.w,
+table.formTbl td textarea {width:99%; font-size:14px;}
+
+table.corpTbl { width:90%; margin:10px auto; background:#ccc; font-size:13px;}
+table.corpTbl th { text-align:right; background:#eff; border-right:4px solid #040; padding-right:8px; }
+table.corpTbl td { background:#fff; padding-left:4px;}
+
+table.price { margin:0 auto; background:#ccc; font-size:13px;}
+table.price thead th {background:#eff;}
+table.price thead td { background:#fff;}
+table.price tbody th { background:#069; color:#fff;padding:0 6px 0 30px; text-align:right;}
+table.price tbody td { background:#ffd;padding:2px 10px; text-align:right;}
+
+dl.course {margin:0 10px 0 15px; padding:0;}
+dl.course dt{margin:0 0 0; padding:0 0 0 20px; font-weight:bold;font-size:14px;background:url(img/mark_dt.jpg) no-repeat; line-height:20px; color:#020;}
+dl.course dd{margin:2px 0 4px; padding:0 0 0 20px; line-height:120%;font-size:13px; color:#333;}
+
+dl#pv { margin:10px; padding:5px; border:1px solid #eee; font-size:13px;}
+dl#pv dt { color:#369;}
+dl#pv dd { margin:0 0 0 15px; color:#333; font-size:12px;}
+
+ol#mark3 { margin:0 0 0 25px;padding:5px;}
+ul#mark1 { margin:0 0 0 25px;padding:5px;}
+ul#mark1 li { list-style-image:url(img/mark_li1.jpg); list-style-position:inside;color:#333;font-size:13px;}
+
+ul#mark2 { margin:0 0 0 10px; padding:0;  }
+ul#mark2 li { padding:0 0 0 20px; background:url(img/mark_li2.jpg) no-repeat; background-position:0 2px;list-style-posirion:inside; list-style-type:none; font-size:13px; color:#333;}
+ul#mark2 li label { font-weight:bold; font-size:14px; color:#500;}
+
+ul#WORK { margin:0; padding:0; list-style:none;}
+ul#WORK li {width:170px; padding:4px 6px 6px 4px; margin-left:5px; float:left; background:url(img/work_bg.jpg) no-repeat;}
+
+small {color:#c00; font-size:11px;}
+blockquote {font-size:13px; color:#333; margin:0 10px 0 20px; padding:0;line-height:150%;}
+.tbl_common {
+	font-size: 12px;
+	margin-bottom: 20px;
+}
+h6 {
+	text-shadow:0 -1px 5px #FFF, -1px 0 1px #FFF, 1px 0 5px #000;
+	font-size: 30px;
+	color: #CC3300;
+	line-height: 30px;
+	margin: 0px;
+}
+#mark3 li {
+	line-height: 30px;
+	margin-bottom: 10px;
+	margin-right: 0px;
+	margin-left: 0px;
+	color: #0033CC;
+}
+.line {
+	margin-right: 10px;
+	margin-left: 10px;
+	border-top-width: 1px;
+	border-top-style: dotted;
+	border-top-color: #666666;
+	margin-top: 0px;
+	margin-bottom: 20px;
+}
