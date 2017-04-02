@@ -1,0 +1,212 @@
+@charset 'utf-8';
+
+@import 'reset';
+@import 'variables';
+
+h1 {
+    font-size: 0.7rem;
+    font-weight: normal;
+    text-align: right;
+}
+h2 {
+    font-size: 1.2rem;
+    font-weight: normal;
+    border-left: 0.5rem solid $color-green;
+    margin: 1rem 0;
+    padding-left: 0.5rem;
+}
+
+.container {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0.5rem;
+}
+
+.header {
+    padding: 0.5rem;
+    background: linear-gradient(#000080,#0000cd);
+    color: $color-white;
+    .contents {
+        display: flex;
+        flex-wrap: wrap;
+        .logo {
+            flex: 1;
+            a {
+                color: $color-white;
+            }
+            .en_US {
+                font-size: 1.2rem;
+            }
+            .ja_JP {
+                font-size: 1.4rem;
+                font-weight: bold;
+            }
+        }
+        .inquiry {
+            margin: 0.5rem 0.2rem 0 0;
+            padding: 0.5rem;
+            border: 1px solid $color-gray;
+            border-radius: 0.5rem;
+            font-size: 0.8rem;
+            text-align: center;
+            .tel {
+                font-size: 1rem;
+                font-weight: bold;
+                color: #ffff00;
+            }
+        }
+    }
+}
+
+.flexslider {
+    background-color: #cccccc;
+    height: 300px;
+    margin: 0 0.2rem 1rem;
+}
+
+.contents {
+    display: flex;
+    .content {
+        padding: 0.2rem;
+    }
+    .side {
+        a {
+            color: $color-black;
+        }
+        margin-right: 1rem;
+        .title {
+            border-left: 0.5rem solid $color-green;
+            margin-bottom: 0.2rem;
+            padding-left: 0.5rem;
+        }
+        .menu {
+            padding: 0 0.5rem 0.5rem 0.2rem;
+            .links {
+                .link {
+                    margin-bottom: 0.2rem;
+                    a {
+                        padding: 0 0.5rem;
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+        .partner {
+            margin: 1.5rem 0;
+            padding: 0.5rem 0;
+            border-top: 1px dotted $color-gray;
+            border-bottom: 1px dotted $color-gray;
+            font-size: 0.8rem;
+        }
+        .address {
+            font-size: 0.8rem;
+            .logo {
+                font-size: 1rem;
+                font-weight: bold;
+            }
+        }
+    }
+    .main {
+        flex: 1;
+        .wanted {
+            display: flex;
+            border: 1px solid $color-gray;
+            margin: 0.2rem 0.2rem 1rem 0.2rem;
+            padding: 1rem;
+            .img {
+                height: 100px;
+                width: 150px;
+                margin-right: 1rem;
+                background-color: #cccccc;
+            }
+            .copy {
+                flex: 1;
+                .title {
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                    color: #000080;
+                }
+            }
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            .service {
+                padding: 0.2rem;
+                a {
+                    color: $color-black;
+                }
+                .img {
+                    height: 150px;
+                    background-color: #cccccc;
+                }
+                .title {
+                    border-left: 0.3rem solid $color-green;
+                    margin-top: 0.3rem;
+                    padding-left: 0.3rem;
+                }
+                .description {
+                    font-size: 0.8rem;
+                    padding-left: 0.3rem;
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    padding: 1rem 0;
+    background-color: #5f9ea0;
+    font-size: 0.8rem;
+    .links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .link {
+            padding: 0 0.5rem;
+            a {
+                color: $color-white;
+            }
+        }
+        .link + .link {
+            border-left: 1px solid #cccccc;
+        }
+    }
+    .copyright {
+        margin: 0.5rem 0 1rem;
+        color: $color-white;
+        text-align: center;
+    }
+}
+@import 'inquiry';
+
+@media screen and (max-width: 640px) {
+    .header {
+        .logo {
+            flex: 0 0 100%;
+        }
+        .inquiry {
+            flex: 0 0 100%;
+        }
+    }
+    .side {
+        display: none;
+    }
+    .services .service {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .footer .links .link {
+        flex: 0 0 100%;
+        max-width: 100%;
+        & + .link {
+            border: none;
+        }
+    }
+}
+@media screen and (min-width: 641px) {
+    .services .service {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
