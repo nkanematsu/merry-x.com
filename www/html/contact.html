@@ -6,6 +6,7 @@
         <meta name="description" content="ビル清掃 オフィス清掃 マンション清掃のメリエックス株式会社です。オフィスビル、ショッピングセンター、ホテル、病院･医療施設、学校、老人施設などのビル清掃、保守点検、設備管理、ビルメンテナンスをおこなっています。" />
         <meta name="keywords" content="清掃,掃除,ビル清掃,オフィス清掃,マンション清掃,建設CAD,メリエックス株式会社" />
         <meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1" />
+        <link rel="shortcut icon" href="/favicon.ico">
         <link rel="stylesheet" href="/css/font-awesome.min.css" />
         <link rel="stylesheet" href="/css/app.css" />
         <script>
@@ -78,7 +79,7 @@
                     </div>
                     <form action="/contact.php" method="post" novalidate="novalidate" class="inquiry">
                         <ul>
-                            <li>
+                            <li class="row">
                                 <div class="label">
                                     <label class="required">担当者名(名前)</label>
                                 </div>
@@ -86,7 +87,7 @@
                                     <input type="text" name="担当者名(名前)">
                                 </div>
                             </li>
-                            <li>
+                            <li class="row">
                                 <div class="label">
                                     <label class="required">法人名</label>
                                 </div>
@@ -94,7 +95,7 @@
                                     <input type="text" name="法人名">
                                 </div>
                             </li>
-                            <li>
+                            <li class="row">
                                 <div class="label">
                                     <label>連絡先番号</label>
                                 </div>
@@ -102,7 +103,7 @@
                                     <input type="text" name="連絡先番号">
                                 </div>
                             </li>
-                            <li>
+                            <li class="row">
                                 <div class="label">
                                     <label class="required">メールアドレス</label>
                                 </div>
@@ -110,46 +111,46 @@
                                     <input type="text" name="email">
                                 </div>
                             </li>
-                            <li>
+                            <li class="row">
                                 <div class="label">
-                                    <label>質問項目</label>
+                                    <label>お問い合わせ項目</label>
                                 </div>
                                 <ul class="input types">
                                     <li class="type">
-                                        <input id="type_office" type="checkbox" name="質問事項1" value="オフィス清掃">
-                                        <label for="type_office">オフィス清掃</label>
+                                        <input id="type_1" type="checkbox" name="質問事項1" value="オフィス清掃">
+                                        <label for="type_1">オフィス清掃</label>
                                     </li>
                                     <li class="type">
-                                        <input id="type_" type="checkbox" name="質問事項2" value="定期清掃">
-                                        <label for="type_">定期清掃</label>
+                                        <input id="type_2" type="checkbox" name="質問事項2" value="定期清掃">
+                                        <label for="type_2">定期清掃</label>
                                     </li>
                                     <li class="type">
-                                        <input id="type_" type="checkbox" name="質問事項3" value="マンション・アパート">
-                                        <label for="type_">マンション・アパート</label>
+                                        <input id="type_3" type="checkbox" name="質問事項3" value="マンション・アパート">
+                                        <label for="type_3">マンション・アパート</label>
                                     </li>
                                     <li class="type">
-                                        <input id="type_" type="checkbox" name="質問事項4" value="エアコンクリーニング">
-                                        <label for="type_">エアコンクリーニング</label>
+                                        <input id="type_4" type="checkbox" name="質問事項4" value="エアコンクリーニング">
+                                        <label for="type_4">エアコンクリーニング</label>
                                     </li>
                                     <li class="type">
-                                        <input id="type_" type="checkbox" name="質問事項5" value="高所ガラス清掃">
-                                        <label for="type_">高所ガラス清掃</label>
+                                        <input id="type_5" type="checkbox" name="質問事項5" value="高所ガラス清掃">
+                                        <label for="type_5">高所ガラス清掃</label>
                                     </li>
                                     <li class="type">
-                                        <input id="type_" type="checkbox" name="質問事項6" value="医療関係">
-                                        <label for="type_">医療関係</label>
+                                        <input id="type_6" type="checkbox" name="質問事項6" value="医療関係">
+                                        <label for="type_6">医療関係</label>
                                     </li>
                                     <li class="type">
-                                        <input id="type_" type="checkbox" name="質問事項7" value="老人介護施設">
-                                        <label for="type_">老人介護施設</label>
+                                        <input id="type_7" type="checkbox" name="質問事項7" value="老人介護施設">
+                                        <label for="type_7">老人介護施設</label>
                                     </li>
                                     <li class="type">
-                                        <input id="type_" type="checkbox" name="質問事項9" value="その他">
-                                        <label for="type_">その他</label>
+                                        <input id="type_8" type="checkbox" name="質問事項9" value="その他">
+                                        <label for="type_8">その他</label>
                                     </li>
                                 </ul>
                             </li>
-                            <li>
+                            <li class="row">
                                 <div class="label">
                                     <label class="required">お問い合わせ内容</label>
                                 </div>
@@ -157,7 +158,7 @@
                                     <textarea name="お問い合わせ内容" rows="8"></textarea>
                                 </div>
                             </li>
-                            <li>
+                            <li class="row">
                                 <input type="submit" name="送信">
                             </li>
                         </ul>

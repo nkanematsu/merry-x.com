@@ -10,15 +10,15 @@
         > ul {
             > li {
                 display: flex;
+                &.row {
+                    padding-bottom: 0.5rem;
+                }
                 .label {
                     width: 40%;
                     label {
                         border-left: 0.3rem solid $color-green;
                         padding-left: 0.2rem;
                     }
-                }
-                > input {
-                    width: 60%;
                 }
                 .types {
                     width: 60%;
@@ -29,35 +29,6 @@
                 }
                 .input {
                     width: 60%;
-                },
-                textarea {
-                    width: 100%;
-                    padding: 0.5rem;
-                    font-size: 1rem;
-                }
-                input[type=text] {
-                    width: 100%;
-                    padding: 0.5rem;
-                    font-size: 1rem;
-                }
-                input[type=submit] {
-                    width: 20%;
-                    margin: 2rem auto;
-                    font-size: 1rem;
-                    border-radius: 0.5rem;
-                }
-                .required:after {
-                    content: '*';
-                    top: 50%;
-                    margin-left: 0.5rem;
-                    font-weight: bold;
-                    color: $color-red;
-                }
-                .error {
-                    color: $color-red;
-                }
-                input.error, textarea.error {
-                    border: 0.1rem solid $color-red;
                 }
             }
         }

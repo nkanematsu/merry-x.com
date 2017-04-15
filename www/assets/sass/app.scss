@@ -2,25 +2,8 @@
 
 @import 'reset';
 @import 'variables';
-
-h1 {
-    font-size: 0.7rem;
-    font-weight: normal;
-    text-align: right;
-}
-h2 {
-    font-size: 1.2rem;
-    font-weight: normal;
-    border-left: 0.5rem solid $color-green;
-    margin: 1rem 0;
-    padding-left: 0.5rem;
-}
-
-.container {
-    max-width: 980px;
-    margin: 0 auto;
-    padding: 0.5rem;
-}
+@import 'common';
+@import 'form';
 
 .header {
     padding: 0.5rem;
@@ -52,16 +35,10 @@ h2 {
             .tel {
                 font-size: 1rem;
                 font-weight: bold;
-                color: #ffff00;
+                color: $color-yellow;
             }
         }
     }
-}
-
-.flexslider {
-    background-color: #cccccc;
-    height: 300px;
-    margin: 0 0.2rem 1rem;
 }
 
 .contents {
@@ -108,55 +85,12 @@ h2 {
     }
     .main {
         flex: 1;
-        .wanted {
-            display: flex;
-            border: 1px solid $color-gray;
-            margin: 0.2rem 0.2rem 1rem 0.2rem;
-            padding: 1rem;
-            .img {
-                height: 100px;
-                width: 150px;
-                margin-right: 1rem;
-                background-color: #cccccc;
-            }
-            .copy {
-                flex: 1;
-                .title {
-                    font-size: 1.2rem;
-                    font-weight: bold;
-                    color: #000080;
-                }
-            }
-        }
-        .services {
-            display: flex;
-            flex-wrap: wrap;
-            .service {
-                padding: 0.2rem;
-                a {
-                    color: $color-black;
-                }
-                .img {
-                    height: 150px;
-                    background-color: #cccccc;
-                }
-                .title {
-                    border-left: 0.3rem solid $color-green;
-                    margin-top: 0.3rem;
-                    padding-left: 0.3rem;
-                }
-                .description {
-                    font-size: 0.8rem;
-                    padding-left: 0.3rem;
-                }
-            }
-        }
     }
 }
 
 .footer {
     padding: 1rem 0;
-    background-color: #5f9ea0;
+    background-color: #f0f0f0;
     font-size: 0.8rem;
     .links {
         display: flex;
@@ -165,19 +99,20 @@ h2 {
         .link {
             padding: 0 0.5rem;
             a {
-                color: $color-white;
+                color: $color-black;
             }
         }
         .link + .link {
-            border-left: 1px solid #cccccc;
+            border-left: 1px solid $color-gray;
         }
     }
     .copyright {
         margin: 0.5rem 0 1rem;
-        color: $color-white;
+        color: $color-black;
         text-align: center;
     }
 }
+@import 'index';
 @import 'inquiry';
 
 @media screen and (max-width: 640px) {
