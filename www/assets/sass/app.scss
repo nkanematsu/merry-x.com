@@ -1,118 +1,39 @@
 @charset 'utf-8';
 
-@import 'reset';
+@import 'sanitize';
 @import 'variables';
 @import 'common';
-@import 'form';
-
-.header {
-    padding: 0.5rem;
-    background: linear-gradient(#000080,#0000cd);
-    color: $color-white;
-    .contents {
-        display: flex;
-        flex-wrap: wrap;
-        .logo {
-            flex: 1;
-            a {
-                color: $color-white;
-            }
-            .en_US {
-                font-size: 1.2rem;
-            }
-            .ja_JP {
-                font-size: 1.4rem;
-                font-weight: bold;
-            }
-        }
-        .inquiry {
-            margin: 0.5rem 0.2rem 0 0;
-            padding: 0.5rem;
-            border: 1px solid $color-gray;
-            border-radius: 0.5rem;
-            font-size: 0.8rem;
-            text-align: center;
-            .tel {
-                font-size: 1rem;
-                font-weight: bold;
-                color: $color-yellow;
-            }
-        }
-    }
-}
+@import 'layout/header';
+@import 'layout/side';
+@import 'layout/footer';
+@import 'components/slider';
+@import 'components/form';
+@import 'components/card';
 
 .contents {
     display: flex;
-    .content {
-        padding: 0.2rem;
-    }
-    .side {
-        a {
-            color: $color-black;
-        }
-        margin-right: 1rem;
-        .title {
-            border-left: 0.5rem solid $color-green;
-            margin-bottom: 0.2rem;
-            padding-left: 0.5rem;
-        }
-        .menu {
-            padding: 0 0.5rem 0.5rem 0.2rem;
-            .links {
-                .link {
-                    margin-bottom: 0.2rem;
-                    a {
-                        padding: 0 0.5rem;
-                        font-size: 0.8rem;
-                    }
-                }
-            }
-        }
-        .partner {
-            margin: 1.5rem 0;
-            padding: 0.5rem 0;
-            border-top: 1px dotted $color-gray;
-            border-bottom: 1px dotted $color-gray;
-            font-size: 0.8rem;
-        }
-        .address {
-            font-size: 0.8rem;
-            .logo {
-                font-size: 1rem;
-                font-weight: bold;
-            }
-        }
-    }
     .main {
-        flex: 1;
+        flex: 1 1 0;
+        width: 100%;
     }
 }
 
-.footer {
-    padding: 1rem 0;
-    background-color: #f0f0f0;
-    font-size: 0.8rem;
-    .links {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        .link {
-            padding: 0 0.5rem;
-            a {
-                color: $color-black;
-            }
-        }
-        .link + .link {
-            border-left: 1px solid $color-gray;
-        }
-    }
-    .copyright {
-        margin: 0.5rem 0 1rem;
-        color: $color-black;
-        text-align: center;
-    }
-}
 @import 'index';
+/**
+ * services
+ */
+@import 'service';
+@import 'office';
+@import 'wax';
+@import 'carpet';
+@import 'house';
+@import 'aircon';
+@import 'apaman';
+/**
+ *
+ */
+@import 'privacy';
+@import 'corp';
 @import 'inquiry';
 
 @media screen and (max-width: 640px) {

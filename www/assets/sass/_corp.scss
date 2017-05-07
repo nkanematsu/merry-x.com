@@ -1,0 +1,48 @@
+main.corp {
+    h2 {
+        border-left: 0.5rem solid $color-blue;
+        border-bottom: 0.1rem solid $color-blue;
+    }
+    .philosophy {
+        h3 {
+            font-size: 1.2rem;
+            text-align: center;
+        }
+        .message p {
+            margin: 0;
+        }
+    }
+    table {
+        caption {
+            text-align: left;
+            border-left: 0.3rem solid $color-blue;
+            margin: 0.1rem 0 0.5rem 0.5rem;
+            padding-left: 0.1rem;
+            p {
+                margin: 0;
+            }
+        }
+        border: solid 1px $color-gray;
+        border-collapse: collapse;
+        margin-bottom: 1rem;
+        th,td {
+            border: solid 1px $color-gray;
+            border-collapse: collapse;
+            text-align: center;
+            padding: 0.5rem;
+        }
+        th {
+            background-color: $color-lightgrey;
+            padding: 0 auto;
+        }
+        td {
+            text-align: left;
+            p {
+                margin: 0;
+            }
+            ul {
+                margin-left: 1rem;
+            }
+        }
+    }
+}

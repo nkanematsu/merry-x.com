@@ -1,79 +1,70 @@
-@charset 'utf-8';
-
-.slider {
-    margin: 0 0.2rem 1rem;
-    .slide {
-        position: relative;
-        height: 300px;
-        img {
-            margin-top: -70px;
+main.index {
+    .slider {
+        .slide.office {
+            background: url(/img/slider/office.jpg) center / cover;
         }
-        .message {
-            position: absolute;
-            top: 0;
-            left: 0;
-            margin: 0.5rem;
-            padding: 0.5rem;
-            border: 1px solid $color-blue;
-            border-radius: 0.3rem;
-            background-color: $color-white;
-            opacity: 0.9;
-            .title {
-                border-left: 0.4rem solid $color-green;
-                padding-left: 0.3rem;
-                font-size: 1rem;
-            }
+        .slide.apartment {
+            background: url(/img/slider/apartment.jpg) center / cover;
+        }
+        .slide.clinic {
+            background: url(/img/slider/clinic.jpg) center / cover;
+        }
+        .slide.house {
+            background: url(/img/slider/house.jpg) center / cover;
         }
     }
-}
 
-.contents {
-    .main {
-        .services {
-            display: flex;
-            flex-wrap: wrap;
-            .service {
-                padding: 0.2rem;
-                a {
-                    color: $color-black;
+    .contents {
+        .main {
+            .services {
+                display: flex;
+                flex-wrap: wrap;
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                .service {
+                    padding: 0.2rem;
+                    .card {
+                        &__title {
+                            height: 90px;
+                            padding: 0.3rem;
+                            &-text {
+                                background: rgba(0, 0, 0, 0.3);
+                                border-left: 0.3rem solid $color-green;
+                                padding: 0.3rem 1rem;
+                                font-weight: normal;
+                                color: $color-white;
+                            }
+                        }
+                        &__supporting-text {
+                            ul {
+                                list-style: none;
+                                margin: 0;
+                                padding: 0.3rem;
+                            }
+                        }
+                    }
+                    .card.office .card__title {
+                        background: url(/img/office.jpg) center / cover;
+                    }
+                    .card.wax .card__title {
+                        background: url(/img/wax.jpg) center / cover;
+                    }
+                    .card.carpet .card__title {
+                        background: url(/img/carpet.jpg) center / cover;
+                    }
+                    .card.house .card__title {
+                        background: url(/img/housecleaning.jpg) center / cover;
+                    }
+                    .card.air-conditioner .card__title {
+                        background: url(/img/air-conditioner.jpg) center / cover;
+                    }
+                    .card.apartment .card__title {
+                        background: url(/img/apartment.jpg) center / cover;
+                    }
                 }
-                .img {
-                    height: 70px;
-                    overflow: hidden;
-                    background-color: #cccccc;
-                    &.office {
-                        background-image: url(/img/office.jpg);
-                        background-position: 50% 60%;
-                    }
-                    &.wax {
-                        background-image: url(/img/wax.jpg);
-                        background-position: 50% 50%;
-                    }
-                    &.air-conditioner {
-                        background-image: url(/img/air-conditioner.jpg);
-                        background-position: left 40%;
-                    }
-                    &.house {
-                        background-image: url(/img/housecleaning.jpg);
-                        background-position: 50% 17%;
-                    }
-                    &.carpet {
-                        background-image: url(/img/carpet.jpg);
-                        background-position: 50% 50%;
-                    }
-                    &.apartment {
-                        background-image: url(/img/apartment.jpg);
-                        background-position: 50% 60%;
-                    }
-                }
-                .title {
-                    border-left: 0.3rem solid $color-green;
-                    margin-top: 0.3rem;
-                    padding-left: 0.3rem;
-                }
-                .description {
-                    font-size: 0.8rem;
-                    padding-left: 0.3rem;
+                a:hover {
+                    text-decoration: none;
                 }
             }
         }

@@ -1,0 +1,88 @@
+.service {
+    ul {
+        list-style: none;
+    }
+    .heading {
+        h2 {
+            border-bottom: 0.1rem solid $color-green;
+            border-left: 0.5rem solid $color-green;
+            padding-left: 0.3rem;
+        }
+        .message p {
+            margin: 0;
+        }
+    }
+    .works {
+        dt {
+            border-left: 0.3rem solid $color-green;
+            margin-left: 0.5rem;
+            padding-left: 0.1rem;
+        }
+        dd {
+            margin-left: 1rem;
+        }
+    }
+    .prices {
+        h3 {
+            border-bottom: 0.1rem solid $color-orange;
+            border-left: 0.5rem solid $color-orange;
+            padding-left: 0.3rem;
+        }
+        .message p {
+            margin: 0;
+        }
+        table {
+            caption {
+                text-align: left;
+                border-left: 0.3rem solid $color-orange;
+                margin: 0.1rem 0 0.5rem 0.5rem;
+                padding-left: 0.1rem;
+                p {
+                    margin: 0;
+                }
+            }
+            border: solid 1px $color-gray;
+            border-collapse: collapse;
+            margin-bottom: 1rem;
+            th,td {
+                border: solid 1px $color-gray;
+                border-collapse: collapse;
+                text-align: center;
+                padding: 0.5rem;
+            }
+            th {
+                background-color: $color-lightgrey;
+                padding: 0 auto;
+            }
+        }
+        dl {
+            dt {
+                border-left: 0.3rem solid $color-orange;
+                margin: 0.1rem 0 0.5rem 0.5rem;
+                padding: 0.1rem;
+            }
+            dd {
+                ul {
+                    list-style: disc;
+                }
+            }
+        }
+    }
+    .images {
+        h3 {
+            border-bottom: 0.1rem solid $color-blue;
+            border-left: 0.5rem solid $color-blue;
+            padding-left: 0.3rem;
+            margin-bottom: 0.5rem;
+        }
+        .slider {
+            .slide {
+                .message {
+                    height: 2rem;
+                    margin: 0;
+                    padding: 0.2rem 0 0.2rem 1rem;
+                }
+            }
+        }
+    }
+}

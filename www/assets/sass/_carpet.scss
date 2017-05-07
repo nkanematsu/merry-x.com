@@ -1,0 +1,52 @@
+main.carpet {
+    .heading {
+        .slider {
+            .slide.slide1 {
+                background: url(/img/pic_carpet1.jpg) center / cover;
+            }
+            .slide.slide2 {
+                background: url(/img/pic_carpet2.jpg) center / cover;
+            }
+            .slide.slide3 {
+                background: url(/img/pic_carpet3.jpg) center / cover;
+            }
+        }
+    }
+    .images {
+        .slider {
+            .slide.slide1 {
+                background: url(/img/carpet_flow.jpg) center / contain no-repeat;
+            }
+            .slide.slide2 {
+                background: url(/img/carpet01.jpg) center / contain no-repeat;
+            }
+            .slide.slide3 {
+                background: url(/img/carpet02.jpg) center / contain no-repeat;
+            }
+            .slide.slide4 {
+                background: url(/img/carpet03.jpg) center / contain no-repeat;
+            }
+            .slide.slide5 {
+                background: url(/img/carpet04.jpg) center / contain no-repeat;
+            }
+            .slide.slide6 {
+                background: url(/img/carpet05.jpg) center / contain no-repeat;
+            }
+            .slide.slide7 {
+                background: url(/img/carpet06.jpg) center / contain no-repeat;
+            }
+            .slide.slide8 {
+                background: url(/img/carpet07.jpg) center / contain no-repeat;
+            }
+            .slide.slide9 {
+                background: url(/img/carpet08.jpg) center / contain no-repeat;
+            }
+            .slide.slide10 {
+                background: url(/img/carpet09.jpg) center / contain no-repeat;
+            }
+            .slide.slide11 {
+                background: url(/img/carpet10.jpg) center / contain no-repeat;
+            }
+        }
+    }
+}

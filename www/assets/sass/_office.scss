@@ -1,0 +1,31 @@
+main.office {
+    .heading {
+        .slider {
+            .slide.slide1 {
+                background: url(/img/pic_office5.jpg) center / cover;
+            }
+            .slide.slide2 {
+                background: url(/img/pic_office6.jpg) center / cover;
+            }
+            .slide.slide3 {
+                background: url(/img/pic_office7.jpg) center / cover;
+            }
+        }
+    }
+    .images {
+        .slider {
+            .slide.slide1 {
+                background: url(/img/pic_office8.jpg) center / contain no-repeat;
+            }
+            .slide.slide2 {
+                background: url(/img/pic_office9.jpg) center / contain no-repeat;
+            }
+            .slide.slide3 {
+                background: url(/img/pic_office10.jpg) center / contain no-repeat;
+            }
+            .slide.slide4 {
+                background: url(/img/pic_office11.jpg) center / contain no-repeat;
+            }
+        }
+    }
+}
