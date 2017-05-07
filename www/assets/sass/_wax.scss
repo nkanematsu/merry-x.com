@@ -1,0 +1,56 @@
+main.wax {
+    .message p {
+        margin: 0;
+    }
+    .heading {
+        .slide {
+            height: 250px;
+        }
+        .slide.slide1 {
+            background-color: red;
+            background: url(/img/pic_wax1.jpg) center / cover;
+        }
+    }
+    .images {
+        .slider.works {
+            .slide.slide1 {
+                background: url(/img/wax01.jpg) center / contain no-repeat;
+            }
+            .slide.slide2 {
+                background: url(/img/wax02.jpg) center / contain no-repeat;
+            }
+            .slide.slide3 {
+                background: url(/img/wax03.jpg) center / contain no-repeat;
+            }
+            .slide.slide4 {
+                background: url(/img/wax04.jpg) center / contain no-repeat;
+            }
+            .slide.slide5 {
+                background: url(/img/wax05.jpg) center / contain no-repeat;
+            }
+            .slide.slide6 {
+                background: url(/img/wax06.jpg) center / contain no-repeat;
+            }
+        }
+        .slider.beforeafter {
+            .slide.slide1 {
+                background: url(/img/wax07.jpg) center / contain no-repeat;
+            }
+            .slide.slide2 {
+                background: url(/img/wax08.jpg) center / contain no-repeat;
+            }
+            .slide.slide3 {
+                background: url(/img/wax09.jpg) center / contain no-repeat;
+            }
+            .slide.slide4 {
+                background: url(/img/wax10.jpg) center / contain no-repeat;
+            }
+            .slide.slide5 {
+                background: url(/img/wax11.jpg) center / contain no-repeat;
+            }
+            .slide.slide6 {
+                background: url(/img/wax12.jpg) center / contain no-repeat;
+            }
+        }
+    }
+}

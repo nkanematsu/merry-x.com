@@ -12,6 +12,12 @@ services:
       - ../www/html:/usr/local/apache2/htdocs
     ports:
       - "80:80"
+  ruby:
+    container_name: ruby
+    image: ruby:alpine
+    volumes_from:
+      - data
+    working_dir: /www
   node:
     container_name: node
     build: ./node

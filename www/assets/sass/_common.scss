@@ -1,0 +1,41 @@
+h1 {
+    margin: 0;
+    font-size: 0.7rem;
+    font-weight: normal;
+    text-align: right;
+}
+
+h2 {
+    font-size: 1.2rem;
+    font-weight: normal;
+    border-left: 0.5rem solid $color-green;
+    margin: 0.5rem 0;
+    padding-left: 0.3rem;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: $color-black;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0.5rem;
+}
+
+.hidden {
+    visibility: hidden;
+}

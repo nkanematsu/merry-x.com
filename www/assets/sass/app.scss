@@ -1,0 +1,68 @@
+@charset 'utf-8';
+
+@import 'sanitize';
+@import 'variables';
+@import 'common';
+@import 'layout/header';
+@import 'layout/side';
+@import 'layout/footer';
+@import 'components/slider';
+@import 'components/form';
+@import 'components/card';
+
+.contents {
+    display: flex;
+    .main {
+        flex: 1 1 0;
+        width: 100%;
+    }
+}
+
+@import 'index';
+/**
+ * services
+ */
+@import 'service';
+@import 'office';
+@import 'wax';
+@import 'carpet';
+@import 'house';
+@import 'aircon';
+@import 'apaman';
+/**
+ *
+ */
+@import 'privacy';
+@import 'corp';
+@import 'inquiry';
+
+@media screen and (max-width: 640px) {
+    .header {
+        .logo {
+            flex: 0 0 100%;
+        }
+        .inquiry {
+            flex: 0 0 100%;
+        }
+    }
+    .side {
+        display: none;
+    }
+    .services .service {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .footer .links .link {
+        flex: 0 0 100%;
+        max-width: 100%;
+        & + .link {
+            border: none;
+        }
+    }
+}
+@media screen and (min-width: 641px) {
+    .services .service {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}

@@ -1,0 +1,46 @@
+main.house {
+    .heading {
+        .slider {
+            .slide.slide1 {
+                background: url(/img/house01.jpg) center / cover;
+            }
+            .slide.slide2 {
+                background: url(/img/house02.jpg) center / cover;
+            }
+            .slide.slide3 {
+                background: url(/img/house03.jpg) center / cover;
+            }
+            .slide.slide4 {
+                background: url(/img/house04.jpg) center / cover;
+            }
+            .slide.slide5 {
+                background: url(/img/house05.jpg) center / cover;
+            }
+            .slide.slide6 {
+                background: url(/img/house06.jpg) center / cover;
+            }
+        }
+    }
+    .images {
+        .slider {
+            .slide.slide1 {
+                background: url(/img/house07.jpg) center / contain no-repeat;
+            }
+            .slide.slide2 {
+                background: url(/img/house08.jpg) center / contain no-repeat;
+            }
+            .slide.slide3 {
+                background: url(/img/house09.jpg) center / contain no-repeat;
+            }
+            .slide.slide4 {
+                background: url(/img/house10.jpg) center / contain no-repeat;
+            }
+            .slide.slide5 {
+                background: url(/img/house11.jpg) center / contain no-repeat;
+            }
+            .slide.slide6 {
+                background: url(/img/house12.jpg) center / contain no-repeat;
+            }
+        }
+    }
+}

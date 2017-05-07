@@ -1,0 +1,47 @@
+.header {
+    padding: 0.5rem;
+    background: linear-gradient(#000080,#0000cd);
+    color: $color-white;
+    .contents {
+        display: flex;
+        flex-wrap: wrap;
+        .logo {
+            flex: 1;
+            a {
+                color: $color-white;
+            }
+            .en_US {
+                font-size: 1.2rem;
+            }
+            .ja_JP {
+                font-size: 1.4rem;
+                font-weight: bold;
+            }
+        }
+        .inquiry {
+            margin: 0.5rem 0.2rem 0 0;
+            padding: 0.5rem;
+            border: 1px solid $color-gray;
+            border-radius: 0.5rem;
+            font-size: 0.8rem;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            p {
+                margin: 0.2rem 0;
+            }
+            ul {
+                list-style: none;
+                margin: 0 auto;
+                li {
+                    text-align: left;
+                }
+            }
+            a {
+                font-size: 1rem;
+                font-weight: bold;
+                color: $color-yellow;
+            }
+        }
+    }
+}

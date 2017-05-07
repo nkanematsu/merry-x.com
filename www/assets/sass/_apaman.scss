@@ -1,0 +1,39 @@
+main.apaman {
+    .works {
+        ul {
+            margin-left: 1.5rem;
+            list-style: disc;
+        }
+    }
+    .images {
+        .slider {
+            .slide.slide1 {
+                background: url(/img/apaman01.jpg) center / contain no-repeat;
+            }
+            .slide.slide2 {
+                background: url(/img/apaman02.jpg) center / contain no-repeat;
+            }
+            .slide.slide3 {
+                background: url(/img/apaman03.jpg) center / contain no-repeat;
+            }
+            .slide.slide4 {
+                background: url(/img/apaman04.jpg) center / contain no-repeat;
+            }
+            .slide.slide5 {
+                background: url(/img/apaman05.jpg) center / contain no-repeat;
+            }
+            .slide.slide6 {
+                background: url(/img/apaman06.jpg) center / contain no-repeat;
+            }
+            .slide.slide7 {
+                background: url(/img/apaman07.jpg) center / contain no-repeat;
+            }
+            .slide.slide8 {
+                background: url(/img/apaman08.jpg) center / contain no-repeat;
+            }
+            .slide.slide9 {
+                background: url(/img/apaman09.jpg) center / contain no-repeat;
+            }
+        }
+    }
+}

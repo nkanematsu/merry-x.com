@@ -1,0 +1,38 @@
+@charset 'utf-8';
+
+input[type=text], textarea {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border:solid 1px $color-gray;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+input[type=submit] {
+    width: 20%;
+    margin: 2rem auto;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input.error, textarea.error {
+    border: 0.1rem solid $color-red;
+}
+
+.required:after {
+    content: '*';
+    top: 50%;
+    margin-left: 0.5rem;
+    font-weight: bold;
+    color: $color-red;
+}
+
+.error {
+    color: $color-red;
+}

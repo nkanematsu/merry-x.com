@@ -1,0 +1,35 @@
+.slider {
+    margin: 0 0 28px;
+    padding: 0;
+    .slide {
+        height: 250px;
+        margin: 0 0.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        .message {
+            height: 3rem;
+            padding: 0.3rem;
+            background: rgba(0, 0, 0, 0.5);
+            color: $color-white;
+            .title {
+                font-weight: normal;
+                margin: 0;
+            }
+        }
+    }
+}
+.images {
+    .slider {
+        padding: 0 1.5rem;
+    }
+}
+.slick-prev:before, .slick-next:before {
+    color: $color-blue;
+}
+.slick-prev {
+    left: 0;
+}
+.slick-next {
+    right: 0;
+}

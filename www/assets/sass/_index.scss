@@ -1,0 +1,72 @@
+main.index {
+    .slider {
+        .slide.office {
+            background: url(/img/slider/office.jpg) center / cover;
+        }
+        .slide.apartment {
+            background: url(/img/slider/apartment.jpg) center / cover;
+        }
+        .slide.clinic {
+            background: url(/img/slider/clinic.jpg) center / cover;
+        }
+        .slide.house {
+            background: url(/img/slider/house.jpg) center / cover;
+        }
+    }
+
+    .contents {
+        .main {
+            .services {
+                display: flex;
+                flex-wrap: wrap;
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                .service {
+                    padding: 0.2rem;
+                    .card {
+                        &__title {
+                            height: 90px;
+                            padding: 0.3rem;
+                            &-text {
+                                background: rgba(0, 0, 0, 0.3);
+                                border-left: 0.3rem solid $color-green;
+                                padding: 0.3rem 1rem;
+                                font-weight: normal;
+                                color: $color-white;
+                            }
+                        }
+                        &__supporting-text {
+                            ul {
+                                list-style: none;
+                                margin: 0;
+                                padding: 0.3rem;
+                            }
+                        }
+                    }
+                    .card.office .card__title {
+                        background: url(/img/office.jpg) center / cover;
+                    }
+                    .card.wax .card__title {
+                        background: url(/img/wax.jpg) center / cover;
+                    }
+                    .card.carpet .card__title {
+                        background: url(/img/carpet.jpg) center / cover;
+                    }
+                    .card.house .card__title {
+                        background: url(/img/housecleaning.jpg) center / cover;
+                    }
+                    .card.air-conditioner .card__title {
+                        background: url(/img/air-conditioner.jpg) center / cover;
+                    }
+                    .card.apartment .card__title {
+                        background: url(/img/apartment.jpg) center / cover;
+                    }
+                }
+                a:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

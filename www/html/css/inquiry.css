@@ -1,0 +1,12 @@
+.main .inquiry {
+  width: 90%;
+  margin: 1rem auto; }
+  .main .inquiry > ul > li {
+    margin-bottom: 0.5rem;
+    display: flex; }
+    .main .inquiry > ul > li .label {
+      width: 40%;
+      border-left: 0.3rem solid #006600;
+      padding-left: 0.5rem; }
+    .main .inquiry > ul > li > input {
+      width: 60%; }
