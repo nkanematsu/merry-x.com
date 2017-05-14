@@ -1,0 +1,15 @@
+version: '2'
+services:
+  datastore:
+    container_name: datastore
+    image: busybox
+    volumes:
+      - .:/app
+  app:
+    container_name: app
+    build: .
+    command: bundle exec rails s -p 3000 -b '0.0.0.0'
+    volumes_from:
+      - datastore
+    ports:
+      - "3000:3000"
