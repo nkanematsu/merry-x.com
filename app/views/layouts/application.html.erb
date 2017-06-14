@@ -1,14 +1,74 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>App</title>
-    <%= csrf_meta_tags %>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title><%= yield(:title) %></title>
+        <meta name="description" content="ビル清掃 オフィス清掃 マンション清掃のメリエックス株式会社です。オフィスビル、ショッピングセンター、ホテル、病院･医療施設、学校、老人施設などのビル清掃、保守点検、設備管理、ビルメンテナンスをおこなっています。" />
+        <meta name="keywords" content="清掃,掃除,ビル清掃,オフィス清掃,マンション清掃,建設CAD,メリエックス株式会社" />
+        <meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1" />
+        <link rel="shortcut icon" href="/favicon.ico">
+        <link rel="stylesheet" href="/vendor/slick/slick.css" />
+        <link rel="stylesheet" href="/vendor/slick/slick-theme.css" />
+        <link rel="stylesheet" href="/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="/css/app.css" />
+        <script>
+            var _gaq = _gaq || [];
+                _gaq.push(['_setAccount', 'UA-16254623-8']);
+                _gaq.push(['_trackPageview']);
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
-
-  <body>
-    <%= yield %>
-  </body>
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <h1>オフィス清掃 ワックス清掃 ビル・マンション清掃 メリエックス株式会社</h1>
+                <div class="contents">
+                    <div class="logo">
+                        <a href="/">
+                            <div class="en_US">Merry'X Co.,Ltd.</div>
+                            <div class="ja_JP">メリエックス株式会社</div>
+                        </a>
+                    </div>
+                    <div class="inquiry">
+                        <p>お気軽にお問い合わせください</p>
+                        <ul>
+                            <li>
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                <a href="tel:0120290298">0120-290-298</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-laptop" aria-hidden="true"></i>
+                                <a href="/contact.html">お問い合わせ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <%= yield %>
+        <footer>
+            <nav class="footer">
+                <ul class="links">
+                    <li class="link"><a href="/office">オフィス清掃</a></li>
+                    <li class="link"><a href="/wax">ワックス清掃</a></li>
+                    <li class="link"><a href="/carpet">カーペット清掃</a></li>
+                    <li class="link"><a href="/house">ハウスクリーニング</a></li>
+                    <li class="link"><a href="/aircon">エアコン清掃</a></li>
+                    <li class="link"><a href="/apaman">アパート・マンション清掃</a></li>
+                    <li class="link"><a href="/about">会社概要</a></li>
+                    <li class="link"><a href="/contact.html">お問い合わせ</a></li>
+                    <li class="link"><a href="/privacy">個人情報保護</a></li>
+                </ul>
+                <div class="copyright">2017© Merry'X Co.,Ltd. copyrights reserved.</div>
+            </nav>
+        </footer>
+        <script src="/js/jquery-3.1.1.min.js"></script>
+        <script src="/vendor/slick/slick.min.js"></script>
+        <script src="/js/index.js"></script>
+    </body>
 </html>
