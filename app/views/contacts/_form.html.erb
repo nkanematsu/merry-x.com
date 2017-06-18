@@ -1,0 +1,47 @@
+<%= form_for(contact) do |f| %>
+  <% if contact.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(contact.errors.count, "error") %> prohibited this contact from being saved:</h2>
+
+      <ul>
+      <% contact.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= '担当者名(名前)' %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= '法人名' %>
+    <%= f.text_field :corporation %>
+  </div>
+
+  <div class="field">
+    <%= '連絡先番号' %>
+    <%= f.text_field :tel %>
+  </div>
+
+  <div class="field">
+    <%= 'メールアドレス' %>
+    <%= f.text_field :email %>
+  </div>
+
+  <div class="field">
+    <%= '質問項目' %>
+    <%= f.text_field :category %>
+  </div>
+
+  <div class="field">
+    <%= 'お問い合わせ内容' %>
+    <%= f.text_area :body %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

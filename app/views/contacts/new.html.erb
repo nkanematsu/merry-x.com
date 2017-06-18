@@ -1,0 +1,13 @@
+        <% provide(:title, 'お問い合わせ | メリエックス株式会社') %>
+
+        <main class="container service office">
+            <div class="contents">
+                <%= render 'shared/nav' %>
+                <div class="main">
+                    <div class="heading">
+                        <h2>お問い合わせ</h2>
+                    </div>
+                    <%= render 'form', contact: @contact %>
+                </div>
+            </div>
+        </main>
