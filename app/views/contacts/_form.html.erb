@@ -1,47 +1,49 @@
-<%= form_for(contact) do |f| %>
-  <% if contact.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(contact.errors.count, "error") %> prohibited this contact from being saved:</h2>
+<% if contact.errors.any? %>
+  <div id="error_explanation">
+    <h2><%= pluralize(contact.errors.count, "error") %> prohibited this contact from being saved:</h2>
 
-      <ul>
-      <% contact.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+    <ul>
+    <% contact.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+    </ul>
+  </div>
+<% end %>
 
+<%= form_for @contact do |f| %>
   <div class="field">
-    <%= '担当者名(名前)' %>
+    <%= f.label :name, '担当者名(名前)' %>
     <%= f.text_field :name %>
   </div>
 
   <div class="field">
-    <%= '法人名' %>
+    <%= f.label :corporation, '法人名' %>
     <%= f.text_field :corporation %>
   </div>
 
   <div class="field">
-    <%= '連絡先番号' %>
+    <%= f.label :tel, '連絡先番号' %>
     <%= f.text_field :tel %>
   </div>
 
   <div class="field">
-    <%= 'メールアドレス' %>
+    <%= f.label :email, 'メールアドレス' %>
     <%= f.text_field :email %>
   </div>
 
   <div class="field">
-    <%= '質問項目' %>
-    <%= f.text_field :category %>
+    <%= f.label :category, '質問項目' %>
+    <%= collection_check_boxes(:contact, :category_ids, Category.all, :id, :name) do |b| %>
+      <%= b.label { b.check_box + b.text } %>
+    <% end %>
   </div>
 
   <div class="field">
-    <%= 'お問い合わせ内容' %>
+    <%= f.label :body, 'お問い合わせ内容' %>
     <%= f.text_area :body %>
   </div>
 
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit '確認', name: 'confirm'  %>
   </div>
 <% end %>

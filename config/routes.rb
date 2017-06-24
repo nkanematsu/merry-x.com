@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :contact_categories
+  resources :categories
   root 'services#index'
   get 'office', to: 'services#office'
   get 'wax', to: 'services#wax'
@@ -10,5 +12,8 @@ Rails.application.routes.draw do
   get 'about', to: 'about#index'
   get 'privacy', to: 'privacy#index'
 
-  resources :contacts
+  #resources :contacts
+  get 'contacts', to: 'contacts#new'
+  post 'contacts', to: 'contacts#create'
+  get 'contacts/thanks', to: 'contacts#thanks'
 end

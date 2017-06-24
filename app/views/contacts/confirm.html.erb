@@ -1,0 +1,65 @@
+        <% provide(:title, 'お問い合わせ | メリエックス株式会社') %>
+
+        <main class="container contacts">
+            <div class="contents">
+                <%= render 'shared/nav' %>
+                <div class="main">
+                    <ul class="breadcrumbs">
+                        <li>お問い合わせ</li>
+                        <li>確認</li>
+                    </ul>
+                    <div class="heading">
+                        <h2>お問い合わせ</h2>
+                        <div>以下の内容で間違いがなければ、「送信」ボタンを押してください。</div>
+                    </div>
+                    <%= form_for @contact do |f| %>
+                      <%= f.hidden_field :name %>
+                      <%= f.hidden_field :corporation %>
+                      <%= f.hidden_field :tel %>
+                      <%= f.hidden_field :email %>
+                      <% @contact.category_ids.each do |category_id| %>
+                        <%= hidden_field_tag 'contact[category_ids][]', category_id %>
+                      <% end %>
+                      <%= f.hidden_field :body %>
+                      <div class="field">
+                        <%= f.label :name, '担当者名(名前)' %>
+                        <%= @contact.name %>
+                      </div>
+
+                      <div class="field">
+                        <%= f.label :corporation, '法人名' %>
+                        <%= @contact.corporation %>
+                      </div>
+
+                      <div class="field">
+                        <%= f.label :tel, '連絡先番号' %>
+                        <%= @contact.tel %>
+                      </div>
+
+                      <div class="field">
+                        <%= f.label :email, 'メールアドレス' %>
+                        <%= @contact.email %>
+                      </div>
+
+                      <div class="field">
+                        <%= f.label :category, '質問項目' %>
+                        <%= Category.where(id: @contact.category_ids).map(&:name).join(', ') %>
+                      </div>
+
+                      <div class="field">
+                        <%= f.label :body, 'お問い合わせ内容' %>
+                        <%= @contact.body %>
+                      </div>
+
+                      <div class="actions">
+                        <%= f.submit '戻る', name: 'back' %>
+                      </div>
+
+                      <div class="actions">
+                        <%= f.submit '送信' %>
+                      </div>
+                    <% end %>
+                </div>
+            </div>
+        </main>
+
