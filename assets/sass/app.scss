@@ -30,12 +30,14 @@
 @import 'aircon';
 @import 'apaman';
 /**
- *
+ * static
  */
 @import 'privacy';
 @import 'corp';
-@import 'inquiry';
-
+/**
+ * contacts
+ */
+@import 'contacts';
 @media screen and (max-width: 640px) {
     .header {
         .logo {

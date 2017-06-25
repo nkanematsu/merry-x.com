@@ -9,7 +9,9 @@ input[type=text], textarea {
     -moz-border-radius: 3px;
     border-radius: 3px;
 }
-
+input[type=checkbox] {
+    margin-right: 0.3em;
+}
 input[type=submit] {
     width: 20%;
     margin: 2rem auto;
@@ -20,11 +22,9 @@ input[type=submit] {
     font-weight: bold;
     cursor: pointer;
 }
-
 input.error, textarea.error {
     border: 0.1rem solid $color-red;
 }
-
 .required:after {
     content: '*';
     top: 50%;
@@ -32,7 +32,6 @@ input.error, textarea.error {
     font-weight: bold;
     color: $color-red;
 }
-
 .error {
     color: $color-red;
 }

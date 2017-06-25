@@ -1,0 +1,45 @@
+main.contacts {
+    ul.breadcrumbs {
+        display: flex;
+        li {
+            list-style: none;
+        }
+        li:not(:last-child):after {
+            content: '>';
+            margin: 0 0.5em;
+        }
+    }
+    .errors {
+        margin: 1em 0;
+        padding: 0.5em 0;
+        border: 0.1rem solid $color-red;
+        border-radius: 5px;
+        ul {
+            margin-left: 1em;
+            li {
+                list-style: none;
+            }
+        }
+    }
+    .field {
+        margin: 0.5em 0;
+        > label {
+            display: block;
+            border-left: 0.3rem solid $color-blue;
+            margin: 0.2em 0;
+            padding-left: 0.2rem;
+        }
+        input[type=text] {
+            width: 20em;
+        }
+        textarea {
+            height: 5em;
+        }
+        ul.categories {
+            li {
+                margin-left: 1em;
+                list-style: none;
+            }
+        }
+    }
+}

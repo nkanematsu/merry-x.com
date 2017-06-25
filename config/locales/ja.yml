@@ -1,0 +1,9 @@
+ja:
+  activerecord:
+    attributes:
+      contact:
+        name: 担当者名(名前)
+        corporation: 法人名
+        tel: 連絡先番号
+        email: メールアドレス
+        body: お問い合わせ内容

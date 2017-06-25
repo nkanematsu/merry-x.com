@@ -671,6 +671,9 @@ input[type=text], textarea {
   -moz-border-radius: 3px;
   border-radius: 3px; }
 
+input[type=checkbox] {
+  margin-right: 0.3em; }
+
 input[type=submit] {
   width: 20%;
   margin: 2rem auto;
@@ -1073,7 +1076,7 @@ main.apaman .images .slider .slide.slide9 {
   background: url(/img/apaman09.jpg) center/contain no-repeat; }
 
 /**
- *
+ * static
  */
 main.privacy h2 {
   border-bottom: 0.1rem solid #006600; }
@@ -1125,28 +1128,41 @@ main.corp table {
     main.corp table td ul {
       margin-left: 1rem; }
 
-.main .message {
-  margin: 1.5rem 0; }
+/**
+ * contacts
+ */
+main.contacts ul.breadcrumbs {
+  display: flex; }
+  main.contacts ul.breadcrumbs li {
+    list-style: none; }
+  main.contacts ul.breadcrumbs li:not(:last-child):after {
+    content: '>';
+    margin: 0 0.5em; }
 
-.main .inquiry {
-  width: 95%;
-  margin: 1rem auto; }
-  .main .inquiry > ul > li {
-    display: flex; }
-    .main .inquiry > ul > li.row {
-      padding-bottom: 0.5rem; }
-    .main .inquiry > ul > li .label {
-      width: 40%; }
-      .main .inquiry > ul > li .label label {
-        border-left: 0.3rem solid #006600;
-        padding-left: 0.2rem; }
-    .main .inquiry > ul > li .types {
-      width: 60%; }
-      .main .inquiry > ul > li .types .type {
-        float: left;
-        margin-right: 1rem; }
-    .main .inquiry > ul > li .input {
-      width: 60%; }
+main.contacts .errors {
+  margin: 1em 0;
+  padding: 0.5em 0;
+  border: 0.1rem solid #ff0000;
+  border-radius: 5px; }
+  main.contacts .errors ul {
+    margin-left: 1em; }
+    main.contacts .errors ul li {
+      list-style: none; }
+
+main.contacts .field {
+  margin: 0.5em 0; }
+  main.contacts .field > label {
+    display: block;
+    border-left: 0.3rem solid #0000cd;
+    margin: 0.2em 0;
+    padding-left: 0.2rem; }
+  main.contacts .field input[type=text] {
+    width: 20em; }
+  main.contacts .field textarea {
+    height: 5em; }
+  main.contacts .field ul.categories li {
+    margin-left: 1em;
+    list-style: none; }
 
 @media screen and (max-width: 640px) {
   .header .logo {

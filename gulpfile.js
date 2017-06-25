@@ -7,7 +7,7 @@ gulp.task('sass', function() {
     gulp.src('assets/sass/**/*.scss')
         .pipe(plumber())
         .pipe(sass())
-        .pipe(gulp.dest('html/css'));
+        .pipe(gulp.dest('public/css'));
 });
 
 gulp.task('watch', function () {
