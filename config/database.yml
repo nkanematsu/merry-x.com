@@ -14,8 +14,8 @@ default: &default
   collation: utf8mb4_bin
   encoding: utf8mb4
   pool: 5
-  username: root
-  password:
+  username: <%= ENV['DB_USERNAME'] %>
+  password: <%= ENV['MAIL_PASSWORD'] %>
   host: db
 
 development:
