@@ -11,16 +11,14 @@
         <link rel="stylesheet" href="/vendor/slick/slick-theme.css" />
         <link rel="stylesheet" href="/css/font-awesome.min.css" />
         <link rel="stylesheet" href="/css/app.css" />
+        <!-- Global Site Tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106664208-1"></script>
         <script>
-            var _gaq = _gaq || [];
-                _gaq.push(['_setAccount', 'UA-16254623-8']);
-                _gaq.push(['_trackPageview']);
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments)};
+          gtag('js', new Date());
 
-            (function() {
-                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-                    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-            })();
+          gtag('config', 'UA-106664208-1');
         </script>
     </head>
     <body>
