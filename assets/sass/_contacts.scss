@@ -1,8 +1,18 @@
 main.contacts {
-    ul.breadcrumbs {
+    ol.breadcrumbs {
+        margin: 0;
+        padding: 0;
         display: flex;
         li {
             list-style: none;
+            font-size: 0.9rem;
+            color: $color-gray;
+            a {
+                span {
+                    font-size: 0.9rem;
+                    color: $color-gray;
+                }
+            }
         }
         li:not(:last-child):after {
             content: '>';
@@ -21,24 +31,41 @@ main.contacts {
             }
         }
     }
-    .field {
-        margin: 0.5em 0;
-        > label {
-            display: block;
-            border-left: 0.3rem solid $color-blue;
-            margin: 0.2em 0;
-            padding-left: 0.2rem;
+    form {
+        margin: 1rem auto;
+        .field {
+            display: flex;
+            align-items: center;
+            margin: 1em 0;
+            > .label {
+                width: 30%;
+            }
+            > .input {
+                width: 65%;
+            }
+            > .confirm {
+                width: 65%;
+            }
+            ul.categories {
+                li {
+                    margin-left: 1em;
+                    list-style: none;
+                }
+            }
+            .field_with_errors {
+                width: auto;
+            }
         }
-        input[type=text] {
-            width: 20em;
-        }
-        textarea {
-            height: 5em;
-        }
-        ul.categories {
-            li {
-                margin-left: 1em;
-                list-style: none;
+        .actions {
+            margin: 1rem auto;
+            text-align: center;
+            .confirm {
+              background-color: $color-blue;
+              color: $color-white;
+            }
+            .submit {
+              background-color: $color-red;
+              color: $color-white;
             }
         }
     }

@@ -4,10 +4,27 @@
             <div class="contents">
                 <%= render 'shared/nav' %>
                 <div class="main">
-                    <ul class="breadcrumbs">
-                        <li>お問い合わせ</li>
-                        <li>確認</li>
-                    </ul>
+                    <ol class="breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
+                        <li itemprop="itemListElement" itemscope
+                            itemtype="http://schema.org/ListItem">
+                            <a itemprop="item" href="http://www.merry-x.com">
+                              <span itemprop="name">トップ</span>
+                            </a>
+                            <meta itemprop="position" content="1" />
+                        </li>
+                        <li itemprop="itemListElement" itemscope
+                            itemtype="http://schema.org/ListItem">
+                            <a itemprop="item" href="http://www.merry-x.com/contacts">
+                              <span itemprop="name">お問い合わせ</span>
+                            </a>
+                            <meta itemprop="position" content="2" />
+                        </li>
+                        <li itemprop="itemListElement" itemscope
+                            itemtype="http://schema.org/ListItem">
+                            <span itemprop="name">確認</span>
+                            <meta itemprop="position" content="3" />
+                        </li>
+                    </ol>
                     <div class="heading">
                         <h2>お問い合わせ</h2>
                         <div>以下の内容で間違いがなければ、「送信」ボタンを押してください。</div>
@@ -22,38 +39,44 @@
                       <% end %>
                       <%= f.hidden_field :body %>
                       <div class="field">
-                        <%= f.label :name, '担当者名(名前)' %>
-                        <%= @contact.name %>
+                        <div class="label"><%= f.label :name, 'お名前' %></div>
+                        <div class="confirm"><%= @contact.name %></div>
                       </div>
 
                       <div class="field">
-                        <%= f.label :corporation, '法人名' %>
-                        <%= @contact.corporation %>
+                        <div class="label"><%= f.label :corporation, '法人名' %></div>
+                        <div class="confirm"><%= @contact.corporation %></div>
                       </div>
 
                       <div class="field">
-                        <%= f.label :tel, '連絡先番号' %>
-                        <%= @contact.tel %>
+                        <div class="label"><%= f.label :tel, '電話番号' %></div>
+                        <div class="confirm"><%= @contact.tel %></div>
                       </div>
 
                       <div class="field">
-                        <%= f.label :email, 'メールアドレス' %>
-                        <%= @contact.email %>
+                        <div class="label"><%= f.label :email, 'メールアドレス' %></div>
+                        <div class="confirm"><%= @contact.email %></div>
                       </div>
 
                       <div class="field">
-                        <%= f.label :category, '質問項目' %>
-                        <%= Category.where(id: @contact.category_ids).map(&:name).join(', ') %>
+                        <div class="label"><%= f.label :category, 'お問い合わせ項目' %></div>
+                        <div class="confirm">
+                          <ul style="list-style-type: none;">
+                          <% Category.where(id: @contact.category_ids).each do |category| %>
+                              <li><%= category.name %></li>
+                          <% end %>
+                          </ul>
+                        </div>
                       </div>
 
                       <div class="field">
-                        <%= f.label :body, 'お問い合わせ内容' %>
-                        <%= @contact.body %>
+                        <div class="label"><%= f.label :body, 'お問い合わせ内容' %></div>
+                        <div class="confirm"><%= @contact.body %></div>
                       </div>
 
                       <div class="actions">
                         <%= f.submit '戻る', name: 'back' %>
-                        <%= f.submit '送信' %>
+                        <%= f.submit '送信', class: 'submit'%>
                       </div>
                     <% end %>
                 </div>

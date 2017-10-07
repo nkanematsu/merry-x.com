@@ -4,6 +4,27 @@
             <div class="contents">
                 <%= render 'shared/nav' %>
                 <div class="main">
+                    <ol class="breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
+                        <li itemprop="itemListElement" itemscope
+                            itemtype="http://schema.org/ListItem">
+                            <a itemprop="item" href="http://www.merry-x.com">
+                              <span itemprop="name">トップ</span>
+                            </a>
+                            <meta itemprop="position" content="1" />
+                        </li>
+                        <li itemprop="itemListElement" itemscope
+                            itemtype="http://schema.org/ListItem">
+                            <a itemprop="item" href="http://www.merry-x.com/contacts">
+                              <span itemprop="name">お問い合わせ</span>
+                            </a>
+                            <meta itemprop="position" content="2" />
+                        </li>
+                        <li itemprop="itemListElement" itemscope
+                            itemtype="http://schema.org/ListItem">
+                            <span itemprop="name">入力</span>
+                            <meta itemprop="position" content="3" />
+                        </li>
+                    </ol>
                     <div class="heading">
                         <h2>お問い合わせ</h2>
                     </div>

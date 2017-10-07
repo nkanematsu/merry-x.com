@@ -1,8 +1,9 @@
 <% if contact.errors.any? %>
   <div class="errors">
-    <ul>
-    <% contact.errors.full_messages.each do |message| %>
-      <li><%= message %></li>
+      <div class="message">入力内容に誤りがあります</div>
+      <ul>
+    <% contact.errors.full_messages.each do |error| %>
+      <li><%= error %></li>
     <% end %>
     </ul>
   </div>
@@ -10,40 +11,42 @@
 
 <%= form_for @contact do |f| %>
   <div class="field">
-    <label class="required">担当者名(名前)</label>
-    <%= f.text_field :name %>
+    <div class="label">お名前<span class="required">必須</span></div>
+    <div class="input"><%= f.text_field :name, :placeholder => '例）春日裕司' %></div>
   </div>
 
   <div class="field">
-    <label class="required">法人名</label>
-    <%= f.text_field :corporation %>
+    <div class="label">法人名<span class="required">必須</span></div>
+    <div class="input"><%= f.text_field :corporation, :placeholder => '例）メリエックス株式会社' %></div>
   </div>
 
   <div class="field">
-    <label>連絡先番号</label>
-    <%= f.text_field :tel %>
+    <div class="label">電話番号</div>
+    <div class="input"><%= f.text_field :tel, :placeholder => '例）03-3693-7502' %></div>
   </div>
 
   <div class="field">
-    <label class="required">メールアドレス</label>
-    <%= f.text_field :email %>
+    <div class="label">メールアドレス<span class="required">必須</span></div>
+    <div class="input"><%= f.text_field :email, :placeholder => '例）info@merryx.com' %></div>
   </div>
 
   <div class="field">
-    <label>質問項目</label>
-    <ul class="categories">
-    <%= collection_check_boxes(:contact, :category_ids, Category.all, :id, :name) do |b| %>
-      <li><%= b.label { b.check_box + b.text } %></li>
-    <% end %>
-    </ul>
+    <div class="label">お問い合わせ項目</div>
+    <div class="input">
+      <ul class="categories">
+      <%= collection_check_boxes(:contact, :category_ids, Category.all, :id, :name) do |b| %>
+        <li><%= b.label { b.check_box + b.text } %></li>
+      <% end %>
+      </ul>
+    </div>
   </div>
 
   <div class="field">
-    <label class="required">お問い合わせ内容</label>
-    <%= f.text_area :body %>
+    <div class="label">お問い合わせ内容<span class="required">必須</span></div>
+    <div class="input"><%= f.text_area :body, :placeholder => '例）業務内容に関するお問い合わせ、お見積依頼、業務依頼などお気軽にお問い合わせ下さい' %></div>
   </div>
 
   <div class="actions">
-    <%= f.submit '確認', name: 'confirm'  %>
+    <%= f.submit '確認画面へ', name: 'confirm', class: 'confirm' %>
   </div>
 <% end %>

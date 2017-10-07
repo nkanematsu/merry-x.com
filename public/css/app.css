@@ -667,35 +667,47 @@ input[type=text], textarea {
   padding: 0.5rem;
   font-size: 1rem;
   border: solid 1px #808080;
+  border-radius: 3px;
   -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px; }
+  -moz-border-radius: 3px; }
+
+textarea {
+  height: 10em; }
 
 input[type=checkbox] {
   margin-right: 0.3em; }
 
 input[type=submit] {
-  width: 20%;
-  margin: 2rem auto;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
   font-size: 1rem;
-  font-weight: bold;
   cursor: pointer; }
 
 input.error, textarea.error {
   border: 0.1rem solid #ff0000; }
 
-.required:after {
-  content: '*';
-  top: 50%;
+.required {
   margin-left: 0.5rem;
-  font-weight: bold;
-  color: #ff0000; }
+  padding: 0.2rem;
+  font-size: 0.8rem;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  background-color: #ff0000;
+  color: #ffffff; }
+
+.errors .message {
+  color: #ff0000;
+  margin: 0.5rem;
+  font-weight: bold; }
 
 .error {
   color: #ff0000; }
+
+.field_with_errors input, .field_with_errors textarea {
+  border-color: #ff0000; }
 
 .card {
   position: relative;
@@ -1131,11 +1143,18 @@ main.corp table {
 /**
  * contacts
  */
-main.contacts ul.breadcrumbs {
+main.contacts ol.breadcrumbs {
+  margin: 0;
+  padding: 0;
   display: flex; }
-  main.contacts ul.breadcrumbs li {
-    list-style: none; }
-  main.contacts ul.breadcrumbs li:not(:last-child):after {
+  main.contacts ol.breadcrumbs li {
+    list-style: none;
+    font-size: 0.9rem;
+    color: #808080; }
+    main.contacts ol.breadcrumbs li a span {
+      font-size: 0.9rem;
+      color: #808080; }
+  main.contacts ol.breadcrumbs li:not(:last-child):after {
     content: '>';
     margin: 0 0.5em; }
 
@@ -1149,20 +1168,32 @@ main.contacts .errors {
     main.contacts .errors ul li {
       list-style: none; }
 
-main.contacts .field {
-  margin: 0.5em 0; }
-  main.contacts .field > label {
-    display: block;
-    border-left: 0.3rem solid #0000cd;
-    margin: 0.2em 0;
-    padding-left: 0.2rem; }
-  main.contacts .field input[type=text] {
-    width: 20em; }
-  main.contacts .field textarea {
-    height: 5em; }
-  main.contacts .field ul.categories li {
-    margin-left: 1em;
-    list-style: none; }
+main.contacts form {
+  margin: 1rem auto; }
+  main.contacts form .field {
+    display: flex;
+    align-items: center;
+    margin: 1em 0; }
+    main.contacts form .field > .label {
+      width: 30%; }
+    main.contacts form .field > .input {
+      width: 65%; }
+    main.contacts form .field > .confirm {
+      width: 65%; }
+    main.contacts form .field ul.categories li {
+      margin-left: 1em;
+      list-style: none; }
+    main.contacts form .field .field_with_errors {
+      width: auto; }
+  main.contacts form .actions {
+    margin: 1rem auto;
+    text-align: center; }
+    main.contacts form .actions .confirm {
+      background-color: #0000cd;
+      color: #ffffff; }
+    main.contacts form .actions .submit {
+      background-color: #ff0000;
+      color: #ffffff; }
 
 @media screen and (max-width: 640px) {
   .header .logo {
