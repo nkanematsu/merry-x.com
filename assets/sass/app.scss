@@ -1,6 +1,10 @@
 @charset 'utf-8';
 
 @import 'sanitize';
+* {
+    min-height: 0;
+    min-width: 0;
+}
 @import 'variables';
 @import 'common';
 @import 'layout/header';

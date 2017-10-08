@@ -512,6 +512,10 @@ textarea,
 [aria-disabled] {
   cursor: default; }
 
+* {
+  min-height: 0;
+  min-width: 0; }
+
 h1 {
   margin: 0;
   font-size: 0.7rem;
