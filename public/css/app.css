@@ -666,6 +666,9 @@ ul {
 .slick-next {
   right: 0; }
 
+.slick-dots {
+  left: -0.5rem; }
+
 input[type=text], textarea {
   width: 100%;
   padding: 0.5rem;
