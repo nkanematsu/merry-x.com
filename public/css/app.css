@@ -856,13 +856,13 @@ main.index .contents .main .services {
   padding: 0.2rem 0 0.2rem 1rem; }
 
 main.office .heading .slider .slide.slide1 {
-  background: url(/img/pic_office5.jpg) center/cover; }
+  background: url(/img/services/office/heading/1.jpg) center/cover; }
 
 main.office .heading .slider .slide.slide2 {
-  background: url(/img/pic_office6.jpg) center/cover; }
+  background: url(/img/services/office/heading/2.jpg) center/cover; }
 
 main.office .heading .slider .slide.slide3 {
-  background: url(/img/pic_office7.jpg) center/cover; }
+  background: url(/img/services/office/heading/3.jpg) center/cover; }
 
 main.office .images .slider .slide.slide1 {
   background: url(/img/pic_office8.jpg) center/contain no-repeat; }
@@ -884,7 +884,7 @@ main.wax .heading .slide {
 
 main.wax .heading .slide.slide1 {
   background-color: red;
-  background: url(/img/pic_wax1.jpg) center/cover; }
+  background: url(/img/services/wax/heading/1.jpg) center/cover; }
 
 main.wax .images .slider.works .slide.slide1 {
   background: url(/img/wax01.jpg) center/contain no-repeat; }
@@ -923,13 +923,16 @@ main.wax .images .slider.beforeafter .slide.slide6 {
   background: url(/img/wax12.jpg) center/contain no-repeat; }
 
 main.carpet .heading .slider .slide.slide1 {
-  background: url(/img/pic_carpet1.jpg) center/cover; }
+  background: url(/img/services/carpet/heading/1.jpg) center/cover; }
 
 main.carpet .heading .slider .slide.slide2 {
-  background: url(/img/pic_carpet2.jpg) center/cover; }
+  background: url(/img/services/carpet/heading/2.jpg) center/cover; }
 
 main.carpet .heading .slider .slide.slide3 {
-  background: url(/img/pic_carpet3.jpg) center/cover; }
+  background: url(/img/services/carpet/heading/3.jpg) center/cover; }
+
+main.carpet .heading .slider .slide.slide4 {
+  background: url(/img/services/carpet/heading/4.jpg) center/cover; }
 
 main.carpet .images .slider .slide.slide1 {
   background: url(/img/carpet_flow.jpg) center/contain no-repeat; }
@@ -965,40 +968,40 @@ main.carpet .images .slider .slide.slide11 {
   background: url(/img/carpet10.jpg) center/contain no-repeat; }
 
 main.house .heading .slider .slide.slide1 {
-  background: url(/img/house01.jpg) center/cover; }
+  background: url(/img/services/house/heading/1.jpg) center/cover; }
 
 main.house .heading .slider .slide.slide2 {
-  background: url(/img/house02.jpg) center/cover; }
+  background: url(/img/services/house/heading/2.jpg) center/cover; }
 
 main.house .heading .slider .slide.slide3 {
-  background: url(/img/house03.jpg) center/cover; }
+  background: url(/img/services/house/heading/3.jpg) center/cover; }
 
 main.house .heading .slider .slide.slide4 {
-  background: url(/img/house04.jpg) center/cover; }
+  background: url(/img/services/house/heading/4.jpg) center/cover; }
 
 main.house .heading .slider .slide.slide5 {
-  background: url(/img/house05.jpg) center/cover; }
+  background: url(/img/services/house/heading/5.jpg) center/cover; }
 
 main.house .heading .slider .slide.slide6 {
-  background: url(/img/house06.jpg) center/cover; }
+  background: url(/img/services/house/heading/6.jpg) center/cover; }
 
 main.house .images .slider .slide.slide1 {
-  background: url(/img/house07.jpg) center/contain no-repeat; }
+  background: url(/img/services/house/images/1.jpg) center/contain no-repeat; }
 
 main.house .images .slider .slide.slide2 {
-  background: url(/img/house08.jpg) center/contain no-repeat; }
+  background: url(/img/services/house/images/2.jpg) center/contain no-repeat; }
 
 main.house .images .slider .slide.slide3 {
-  background: url(/img/house09.jpg) center/contain no-repeat; }
+  background: url(/img/services/house/images/3.jpg) center/contain no-repeat; }
 
 main.house .images .slider .slide.slide4 {
-  background: url(/img/house10.jpg) center/contain no-repeat; }
+  background: url(/img/services/house/images/4.jpg) center/contain no-repeat; }
 
 main.house .images .slider .slide.slide5 {
-  background: url(/img/house11.jpg) center/contain no-repeat; }
+  background: url(/img/services/house/images/5.jpg) center/contain no-repeat; }
 
 main.house .images .slider .slide.slide6 {
-  background: url(/img/house12.jpg) center/contain no-repeat; }
+  background: url(/img/services/house/images/6.jpg) center/contain no-repeat; }
 
 main.aircon .works p {
   margin: 0; }
@@ -1010,86 +1013,95 @@ main.aircon .works strong {
   color: #ff0000; }
 
 main.aircon .images .slider.business .slide.slide1 {
-  background: url(/img/aircon01.jpg) center/contain no-repeat; }
+  background: url(/img/services/aircon/business/1.jpg) center/contain no-repeat; }
 
 main.aircon .images .slider.business .slide.slide2 {
-  background: url(/img/aircon03.jpg) center/contain no-repeat; }
+  background: url(/img/services/aircon/business/2.jpg) center/contain no-repeat; }
 
 main.aircon .images .slider.business .slide.slide3 {
-  background: url(/img/aircon05.jpg) center/contain no-repeat; }
+  background: url(/img/services/aircon/business/3.jpg) center/contain no-repeat; }
 
 main.aircon .images .slider.business .slide.slide4 {
-  background: url(/img/aircon07.jpg) center/contain no-repeat; }
+  background: url(/img/services/aircon/business/4.jpg) center/contain no-repeat; }
 
 main.aircon .images .slider.business .slide.slide5 {
-  background: url(/img/aircon09.jpg) center/contain no-repeat; }
+  background: url(/img/services/aircon/business/5.jpg) center/contain no-repeat; }
 
 main.aircon .images .slider.business .slide.slide6 {
-  background: url(/img/aircon02.jpg) center/contain no-repeat; }
+  background: url(/img/services/aircon/business/6.jpg) center/contain no-repeat; }
 
 main.aircon .images .slider.business .slide.slide7 {
-  background: url(/img/aircon04.jpg) center/contain no-repeat; }
+  background: url(/img/services/aircon/business/7.jpg) center/contain no-repeat; }
 
 main.aircon .images .slider.business .slide.slide8 {
-  background: url(/img/aircon06.jpg) center/contain no-repeat; }
-
-main.aircon .images .slider.business .slide.slide9 {
-  background: url(/img/aircon08.jpg) center/contain no-repeat; }
-
-main.aircon .images .slider.business .slide.slide10 {
-  background: url(/img/aircon10.jpg) center/contain no-repeat; }
+  background: url(/img/services/aircon/business/8.jpg) center/contain no-repeat; }
 
 main.aircon .images .slider.consumer .slide.slide1 {
-  background: url(/img/aircon15.jpg) center/contain no-repeat; }
+  background: url(/img/services/aircon/consumer/1.jpg) center/contain no-repeat; }
 
 main.aircon .images .slider.consumer .slide.slide2 {
-  background: url(/img/aircon16.jpg) center/contain no-repeat; }
+  background: url(/img/services/aircon/consumer/2.jpg) center/contain no-repeat; }
 
 main.aircon .images .slider.consumer .slide.slide3 {
-  background: url(/img/aircon17.jpg) center/contain no-repeat; }
+  background: url(/img/services/aircon/consumer/3.jpg) center/contain no-repeat; }
+
+main.aircon .images .slider.consumer .slide.slide4 {
+  background: url(/img/services/aircon/consumer/4.jpg) center/contain no-repeat; }
+
+main.aircon .images .slider.consumer .slide.slide5 {
+  background: url(/img/services/aircon/consumer/5.jpg) center/contain no-repeat; }
+
+main.aircon .images .slider.consumer .slide.slide6 {
+  background: url(/img/services/aircon/consumer/6.jpg) center/contain no-repeat; }
+
+main.aircon .images .slider.consumer .slide.slide7 {
+  background: url(/img/services/aircon/consumer/7.jpg) center/contain no-repeat; }
 
 main.aircon .images .slider.beforeafter .slide.slide1 {
-  background: url(/img/aircon11.jpg) center/contain no-repeat; }
+  background: url(/img/services/aircon/beforeafter/1.jpg) center/contain no-repeat; }
 
 main.aircon .images .slider.beforeafter .slide.slide2 {
-  background: url(/img/aircon12.jpg) center/contain no-repeat; }
+  background: url(/img/services/aircon/beforeafter/2.jpg) center/contain no-repeat; }
 
 main.aircon .images .slider.beforeafter .slide.slide3 {
-  background: url(/img/aircon13.jpg) center/contain no-repeat; }
+  background: url(/img/services/aircon/beforeafter/3.jpg) center/contain no-repeat; }
 
 main.aircon .images .slider.beforeafter .slide.slide4 {
-  background: url(/img/aircon14.jpg) center/contain no-repeat; }
+  background: url(/img/services/aircon/beforeafter/4.jpg) center/contain no-repeat; }
 
 main.apaman .works ul {
   margin-left: 1.5rem;
   list-style: disc; }
 
 main.apaman .images .slider .slide.slide1 {
-  background: url(/img/apaman01.jpg) center/contain no-repeat; }
+  background: url(/img/services/apaman/images/1.jpg) center/contain no-repeat; }
 
 main.apaman .images .slider .slide.slide2 {
-  background: url(/img/apaman02.jpg) center/contain no-repeat; }
+  background: url(/img/services/apaman/images/2.jpg) center/contain no-repeat; }
 
 main.apaman .images .slider .slide.slide3 {
-  background: url(/img/apaman03.jpg) center/contain no-repeat; }
+  background: url(/img/services/apaman/images/3.jpg) center/contain no-repeat; }
 
 main.apaman .images .slider .slide.slide4 {
-  background: url(/img/apaman04.jpg) center/contain no-repeat; }
+  background: url(/img/services/apaman/images/4.jpg) center/contain no-repeat; }
 
 main.apaman .images .slider .slide.slide5 {
-  background: url(/img/apaman05.jpg) center/contain no-repeat; }
+  background: url(/img/services/apaman/images/5.jpg) center/contain no-repeat; }
 
 main.apaman .images .slider .slide.slide6 {
-  background: url(/img/apaman06.jpg) center/contain no-repeat; }
+  background: url(/img/services/apaman/images/6.jpg) center/contain no-repeat; }
 
 main.apaman .images .slider .slide.slide7 {
-  background: url(/img/apaman07.jpg) center/contain no-repeat; }
+  background: url(/img/services/apaman/images/7.jpg) center/contain no-repeat; }
 
 main.apaman .images .slider .slide.slide8 {
-  background: url(/img/apaman08.jpg) center/contain no-repeat; }
+  background: url(/img/services/apaman/images/8.jpg) center/contain no-repeat; }
 
 main.apaman .images .slider .slide.slide9 {
-  background: url(/img/apaman09.jpg) center/contain no-repeat; }
+  background: url(/img/services/apaman/images/9.jpg) center/contain no-repeat; }
+
+main.apaman .images .slider .slide.slide10 {
+  background: url(/img/services/apaman/images/10.jpg) center/contain no-repeat; }
 
 /**
  * static

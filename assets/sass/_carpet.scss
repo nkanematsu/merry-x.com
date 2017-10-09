@@ -2,13 +2,16 @@ main.carpet {
     .heading {
         .slider {
             .slide.slide1 {
-                background: url(/img/pic_carpet1.jpg) center / cover;
+                background: url(/img/services/carpet/heading/1.jpg) center / cover;
             }
             .slide.slide2 {
-                background: url(/img/pic_carpet2.jpg) center / cover;
+                background: url(/img/services/carpet/heading/2.jpg) center / cover;
             }
             .slide.slide3 {
-                background: url(/img/pic_carpet3.jpg) center / cover;
+                background: url(/img/services/carpet/heading/3.jpg) center / cover;
+            }
+            .slide.slide4 {
+                background: url(/img/services/carpet/heading/4.jpg) center / cover;
             }
         }
     }
