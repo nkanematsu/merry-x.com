@@ -50,23 +50,53 @@
         </header>
         <%= yield %>
         <footer>
-            <nav class="footer">
-                <ul class="links">
-                    <li class="link"><a href="/office">オフィス清掃</a></li>
-                    <li class="link"><a href="/wax">ワックス清掃</a></li>
-                    <li class="link"><a href="/carpet">カーペット清掃</a></li>
-                    <li class="link"><a href="/house">ハウスクリーニング</a></li>
-                    <li class="link"><a href="/aircon">エアコン清掃</a></li>
-                    <li class="link"><a href="/apaman">アパート・マンション清掃</a></li>
-                    <li class="link"><a href="/about">会社概要</a></li>
-                    <li class="link"><a href="/contacts">お問い合わせ</a></li>
-                    <li class="link"><a href="/privacy">個人情報保護</a></li>
-                </ul>
-                <div class="copyright">2017© Merry'X Co.,Ltd. copyrights reserved.</div>
+            <nav class="container footers">
+                <div class="footer">
+                    <h4 class="title">業務内容</h4>
+                    <ul>
+                        <li class="link"><a href="/office">オフィス清掃</a></li>
+                        <li class="link"><a href="/wax">ワックス清掃</a></li>
+                        <li class="link"><a href="/carpet">カーペット清掃</a></li>
+                        <li class="link"><a href="/house">ハウスクリーニング</a></li>
+                        <li class="link"><a href="/aircon">エアコン清掃</a></li>
+                        <li class="link"><a href="/apaman">アパート・マンション清掃</a></li>
+                    </ul>
+                </div>
+                <div class="footer">
+                    <h4 class="title">企業情報</h4>
+                    <ul>
+                        <li class="link"><a href="/about">会社概要</a></li>
+                        <li class="link"><a href="/contacts">お問い合わせ</a></li>
+                        <li class="link"><a href="/privacy">個人情報保護</a></li>
+                    </ul>
+                </div>
+                <div class="footer corporation">
+                    <h4 class="title">メリエックス株式会社</h4>
+                    <div>
+                        <div>
+                            <div>〒124-0022</div>
+                            <div>東京都葛飾区奥戸2-8-15</div>
+                            <div>TEL : 03-3693-7502</div>
+                            <div>FAX : 03-3696-5140</div>
+                        </div>
+                        <div id="map"></div>
+                    </div>
+                </div>
             </nav>
+            <div class="copyright">2017© Merry'X Co.,Ltd. copyrights reserved.</div>
         </footer>
         <script src="/js/jquery-3.1.1.min.js"></script>
         <script src="/vendor/slick/slick.min.js"></script>
         <script src="/js/index.js"></script>
+        <script>
+            var map;
+            function initMap() {
+              map = new google.maps.Map(document.getElementById('map'), {
+                center: {lat: 35.736, lng: 139.855},
+                zoom: 14
+              });
+            }
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAXC61LQGgwa3qw972T0_Q6iSCEZUQflI&callback=initMap"></script>
     </body>
 </html>

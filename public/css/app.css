@@ -529,7 +529,7 @@ h2 {
   margin: 0.5rem 0;
   padding-left: 0.3rem; }
 
-h3 {
+h3, h4 {
   font-size: 1rem; }
 
 a {
@@ -617,24 +617,30 @@ ul {
       font-size: 1rem;
       font-weight: bold; }
 
-.footer {
-  padding: 1rem 0;
-  background-color: #d3d3d3;
-  font-size: 0.8rem; }
-  .footer .links {
+footer {
+  padding: 0.5rem 0;
+  background-color: #d3d3d3; }
+  footer .footers {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center; }
-    .footer .links .link {
-      padding: 0 0.5rem; }
-      .footer .links .link a {
-        color: #000000; }
-    .footer .links .link + .link {
-      border-left: 1px solid #808080; }
-  .footer .copyright {
+    flex-wrap: wrap; }
+    footer .footers .footer h4 {
+      margin: 0.5rem 0; }
+    footer .footers .footer ul {
+      padding-left: 0.5rem; }
+      footer .footers .footer ul .link {
+        padding: 0.1rem 0; }
+        footer .footers .footer ul .link a {
+          color: #000000; }
+    footer .footers .footer.corporation > div {
+      display: flex; }
+  footer .copyright {
     margin: 0.5rem 0 1rem;
     color: #000000;
     text-align: center; }
+  footer #map {
+    margin-left: 1rem;
+    height: 200px;
+    width: 320px; }
 
 .slider {
   margin: 0 0 28px;
@@ -739,7 +745,8 @@ input.error, textarea.error {
   display: flex; }
   .contents .main {
     flex: 1 1 0;
-    width: 100%; }
+    width: 100%;
+    padding-bottom: 2rem; }
 
 main.index .slider .slide.office {
   background: url(/img/slider/office.jpg) center/cover; }
@@ -1224,13 +1231,17 @@ main.contacts form {
   .services .service {
     flex: 0 0 100%;
     max-width: 100%; }
-  .footer .links .link {
-    flex: 0 0 100%;
-    max-width: 100%; }
-    .footer .links .link + .link {
-      border: none; } }
+  footer .footer {
+    padding: none; }
+  footer .footer.corporation {
+    margin-top: 1rem;
+    margin-left: 0; } }
 
 @media screen and (min-width: 641px) {
   .services .service {
     flex: 0 0 50%;
-    max-width: 50%; } }
+    max-width: 50%; }
+  footer .footer {
+    padding: 0 1rem 0 0; }
+  footer .footer.corporation {
+    margin-left: auto; } }

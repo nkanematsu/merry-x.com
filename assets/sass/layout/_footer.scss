@@ -1,24 +1,37 @@
-.footer {
-    padding: 1rem 0;
+footer {
+    padding: 0.5rem 0;
     background-color: $color-lightgrey;
-    font-size: 0.8rem;
-    .links {
+    .footers {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        .link {
-            padding: 0 0.5rem;
-            a {
-                color: $color-black;
+        .footer {
+            h4 {
+                margin: 0.5rem 0;
+            }
+            ul {
+                padding-left: 0.5rem;
+                .link {
+                    padding: 0.1rem 0;
+                    a {
+                        color: $color-black;
+                    }
+                }
             }
         }
-        .link + .link {
-            border-left: 1px solid $color-gray;
+        .footer.corporation {
+            > div {
+                display: flex;
+            }
         }
     }
     .copyright {
         margin: 0.5rem 0 1rem;
         color: $color-black;
         text-align: center;
+    }
+    #map {
+        margin-left: 1rem;
+        height: 200px;
+        width: 320px;
     }
 }
