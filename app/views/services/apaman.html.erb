@@ -1,4 +1,7 @@
         <% provide(:title, 'アパート・マンション清掃 | メリエックス株式会社') %>
+        <% content_for :canonical do %>
+          <link rel="canonical" href="<%= url_for(only_path: false) %>" >
+        <% end %>
 
         <main class="container service apaman">
             <div class="contents">
