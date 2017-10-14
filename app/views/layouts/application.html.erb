@@ -89,11 +89,15 @@
         <script src="/vendor/slick/slick.min.js"></script>
         <script src="/js/index.js"></script>
         <script>
-            var map;
             function initMap() {
-              map = new google.maps.Map(document.getElementById('map'), {
-                center: {lat: 35.736, lng: 139.855},
-                zoom: 14
+              var merryx = {lat: 35.736, lng: 139.855};
+              var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 14,
+                center: merryx
+              });
+              var marker = new google.maps.Marker({
+                position: merryx,
+                map: map
               });
             }
         </script>
