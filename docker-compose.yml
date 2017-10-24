@@ -43,6 +43,15 @@ services:
       - app
     depends_on:
       - app
+  node:
+    container_name: node
+    build:
+      context: .
+      dockerfile: ./docker/node/Dockerfile
+    volumes:
+      - .:/app
+    environment:
+      TZ: Asia/Tokyo
 volumes:
   db_data:
 
