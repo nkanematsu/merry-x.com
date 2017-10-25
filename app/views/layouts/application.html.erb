@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8">
         <title><%= yield(:title) %></title>
-        <meta name="description" content="ビル清掃 オフィス清掃 マンション清掃のメリエックス株式会社です。オフィスビル、ショッピングセンター、ホテル、病院･医療施設、学校、老人施設などのビル清掃、保守点検、設備管理、ビルメンテナンスをおこなっています。" />
-        <meta name="keywords" content="清掃,掃除,ビル清掃,オフィス清掃,マンション清掃,建設CAD,メリエックス株式会社" />
+        <meta name="description" content="<%= yield(:description).presence || "ビル清掃 オフィス清掃 マンション清掃のメリエックス株式会社です。オフィスビル、ショッピングセンター、ホテル、病院･医療施設、学校、老人施設などのビル清掃、保守点検、設備管理、ビルメンテナンスをおこなっています。" %>" />
+        <meta name="keywords" content="<%= yield(:keywords).presence || "清掃,掃除,ビル清掃,オフィス清掃,マンション清掃,建設CAD,メリエックス株式会社" %>" />
         <meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1" />
         <link rel="canonical" href="<%= url_for(only_path: false) %>" >
         <link rel="shortcut icon" href="/favicon.ico">
@@ -25,7 +25,7 @@
     <body>
         <header class="header">
             <div class="container">
-                <h1>オフィス清掃 ワックス清掃 ビル・マンション清掃 メリエックス株式会社</h1>
+                <h1><%= yield(:h1).presence || "オフィス清掃 ワックス清掃 ビル・マンション清掃 メリエックス株式会社" %></h1>
                 <div class="contents">
                     <div class="logo">
                         <a href="/">
