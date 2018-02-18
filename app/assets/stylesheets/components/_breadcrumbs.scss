@@ -1,0 +1,22 @@
+nav.breadcrumbs {
+    ol {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        li {
+            list-style: none;
+            font-size: 0.9rem;
+            color: $color-gray;
+            a {
+                span {
+                    font-size: 0.9rem;
+                    color: $color-gray;
+                }
+            }
+        }
+        li:not(:last-child):after {
+            content: '>';
+            margin: 0 0.5em;
+        }
+    }
+}

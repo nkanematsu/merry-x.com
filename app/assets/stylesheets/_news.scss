@@ -1,0 +1,27 @@
+.news {
+    * {
+        text-align: left;
+    }
+    section {
+        margin-bottom: 1rem;
+        article {
+            padding: 0.5rem 0;
+            h1 {
+                border-left: 0.5rem solid #090;
+                margin: 0;
+                padding-left: 0.3rem;
+                font-size: 1rem;
+                a {
+                    text-decoration: underline;
+                }
+            }
+            time {
+                font-size: 0.9rem;
+                padding: 0.2rem 0;
+            }
+            p {
+                margin: 0.5rem 0;
+            }
+        }
+    }
+}

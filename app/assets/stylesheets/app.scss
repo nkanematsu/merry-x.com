@@ -13,6 +13,8 @@
 @import 'components/slider';
 @import 'components/form';
 @import 'components/card';
+@import 'components/heading';
+@import 'components/breadcrumbs';
 
 .contents {
     display: flex;
@@ -34,15 +36,15 @@
 @import 'house';
 @import 'aircon';
 @import 'apaman';
+@import 'contacts';
+@import 'news';
+
 /**
  * static
  */
 @import 'privacy';
 @import 'corp';
-/**
- * contacts
- */
-@import 'contacts';
+
 @media screen and (max-width: 640px) {
     .header {
         .logo {

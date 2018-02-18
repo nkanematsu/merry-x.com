@@ -1,0 +1,22 @@
+        <% provide(:title, 'お知らせ | メリエックス株式会社') %>
+        <% provide(:keywords, 'オフィス清掃,ビル清掃,マンション清掃,クリニック清掃,介護福祉施設清掃,ハウスクリーニング,お知らせ') %>
+        <% provide(:h1, 'オフィス清掃 ビル・マンション清掃 クリニック・介護施設清掃 ハウスクリーニング のメリエックス株式会社') %>
+
+        <main class="container news">
+            <nav class="breadcrumbs">
+                <ol>
+                    <li><a href="/">トップ</a></li>
+                    <li><a href="/news">お知らせ</a></li>
+                </ol>
+            </nav>
+            <section>
+                <h1>お知らせ</h1>
+                <% @articles.each do |article| %>
+                <article>
+                    <h1><a href="/news/<%= article.id %>"><%= article.title %></a></h1>
+                    <time datetime="<%= article.created_at %>"><%= l article.created_at %></time>
+                    <p><%= truncate(article.body, length: 100) %></p>
+                </article>
+                <% end %>
+            </section>
+        </main>

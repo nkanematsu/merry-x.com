@@ -16,4 +16,7 @@ Rails.application.routes.draw do
   get 'contacts', to: 'contacts#new'
   post 'contacts', to: 'contacts#create'
   get 'contacts/thanks', to: 'contacts#thanks'
+
+  #news
+  get 'news', to: 'news#index'
 end
