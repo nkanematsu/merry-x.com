@@ -25,7 +25,7 @@
         }
     }
     > article {
-            padding: 0.5rem 0 2rem;
+            padding: 0  0 2rem 0;
             h1 {
                 font-size: 1.2rem;
                 font-weight: normal;
@@ -39,8 +39,12 @@
                 font-size: 0.9rem;
                 padding: 0.2rem 0;
             }
-            p {
-                margin: 0.5rem 0;
+            pre {
+                font-family: "Hiragino Kaku Gothic ProN";
+                font-size: 1rem;
+                overflow: auto;
+                white-space: pre-wrap;
+                word-wrap: break-word;
             }
     }
 }

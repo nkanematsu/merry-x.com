@@ -13,6 +13,6 @@
             <article>
                 <h1><%= @article.title %></h1>
                 <time datetime="<%= @article.created_at %>">投稿日: <%= l @article.created_at %></time>
-                <%= simple_format(@article.body) %>
+                <pre><%= @article.body %></pre>
             </article>
         </main>
