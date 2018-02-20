@@ -19,4 +19,5 @@ Rails.application.routes.draw do
 
   #news
   get 'news', to: 'news#index'
+  get 'news/:id', to: 'news#show', as: 'article'
 end

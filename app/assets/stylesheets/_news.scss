@@ -2,7 +2,7 @@
     * {
         text-align: left;
     }
-    section {
+    > section {
         margin-bottom: 1rem;
         article {
             padding: 0.5rem 0;
@@ -23,5 +23,24 @@
                 margin: 0.5rem 0;
             }
         }
+    }
+    > article {
+            padding: 0.5rem 0 2rem;
+            h1 {
+                font-size: 1.2rem;
+                font-weight: normal;
+                margin: 0.5rem 0;
+                padding-left: 0.3rem;
+                border-bottom: 0.1rem solid $color-green;
+                border-left: 0.5rem solid $color-green;
+            }
+            time {
+                display: block;
+                font-size: 0.9rem;
+                padding: 0.2rem 0;
+            }
+            p {
+                margin: 0.5rem 0;
+            }
     }
 }
