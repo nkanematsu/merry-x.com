@@ -4,6 +4,6 @@ class NewsController < ApplicationController
     end
 
     def show
-        @article = Article.find_by(id: params[:id], published: true)
+        @article = Article.find_by!(id: params[:id], published: true)
     end
 end
