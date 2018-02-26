@@ -4,11 +4,3 @@ ja:
       default: ! '%Y/%m/%d'
       long: ! '%Y年%m月%d日(%a) %H時%M分%S秒 %z'
       short: ! '%Y年%m月%d日 %H:%M'
-  activerecord:
-    attributes:
-      contact:
-        name: 担当者名(名前)
-        corporation: 法人名
-        tel: 連絡先番号
-        email: メールアドレス
-        body: お問い合わせ内容

@@ -1,0 +1,28 @@
+ja:
+  activerecord:
+    models:
+      contact: お問い合わせ
+      article: お知らせ
+      admin_user: 管理者
+    attributes:
+      contact:
+        name: 担当者名(名前)
+        corporation: 法人名
+        tel: 連絡先番号
+        email: メールアドレス
+        body: お問い合わせ内容
+        created_at: 登録日時
+        updated_at: 更新日時
+      article:
+        title: 件名
+        body: 本文
+        published: 公開
+        created_at: 登録日時
+        updated_at: 更新日時
+      admin_user:
+        password: パスワード
+        password_confirmation: パスワード確認
+        current_sign_in_at: 直近ログイン日時
+        sign_in_count: ログイン回数
+        created_at: 登録日時
+
