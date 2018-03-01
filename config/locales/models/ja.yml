@@ -2,10 +2,12 @@ ja:
   activerecord:
     models:
       contact: お問い合わせ
+      contact_category: お問い合わせ項目
       article: お知らせ
       admin_user: 管理者
     attributes:
       contact:
+        id: ID
         name: 担当者名(名前)
         corporation: 法人名
         tel: 連絡先番号
