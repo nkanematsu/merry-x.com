@@ -2,6 +2,7 @@ ja:
   activerecord:
     models:
       contact: お問い合わせ
+      category: お問い合わせ項目
       contact_category: お問い合わせ項目
       article: お知らせ
       admin_user: 管理者
@@ -13,6 +14,11 @@ ja:
         tel: 連絡先番号
         email: メールアドレス
         body: お問い合わせ内容
+        created_at: 登録日時
+        updated_at: 更新日時
+      category:
+        id: ID
+        name: 項目名
         created_at: 登録日時
         updated_at: 更新日時
       article:
