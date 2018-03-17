@@ -34,7 +34,7 @@
     <div class="label">お問い合わせ項目</div>
     <div class="input">
       <ul class="categories">
-      <%= collection_check_boxes(:contact, :category_ids, Category.all, :id, :name) do |b| %>
+      <%= collection_check_boxes(:contact, :category_ids, @categories, :id, :name) do |b| %>
         <li><%= b.label { b.check_box + b.text } %></li>
       <% end %>
       </ul>

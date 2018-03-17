@@ -32,15 +32,6 @@ class ContactsController < ApplicationController
     end
 
     def set_categories
-      @categories = [
-          'オフィス清掃',
-          '定期清掃（ＷＡＸ・カーペット等）',
-          'マンション・アパート等の清掃',
-          'エアコンクリーニング',
-          '高所ガラス清掃',
-          '医療関係',
-          '老人介護施設',
-          'その他'
-      ]
+      @categories = Category.where(deleted_at: nil).order(:display_order)
     end
 end

@@ -11,5 +11,6 @@ ActiveAdmin.register Category do
 #   permitted << :other if params[:action] == 'create' && current_user.admin?
 #   permitted
 # end
+  permit_params :name, :display_order, :deleted_at
 
 end
