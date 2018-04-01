@@ -7,7 +7,7 @@ var gulp = require('gulp'),
     mozjpeg = require('imagemin-mozjpeg');
 
 gulp.task('sass', function() {
-    gulp.src('app/assets/stylesheets/**/*.scss')
+    gulp.src('assets/stylesheets/**/*.scss')
         .pipe(plumber())
         .pipe(sass({
             outputStyle: 'compressed'
