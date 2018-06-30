@@ -1,15 +1,4 @@
 main.aircon {
-    .works {
-        p {
-            margin: 0;
-        }
-        strong {
-            line-height: 2.5rem;
-            padding: 0.5rem;
-            font-size: 1.5rem;
-            color: $color-red;
-        }
-    }
     .images {
         .slider.business {
             .slide.slide1 {
@@ -73,6 +62,62 @@ main.aircon {
             .slide.slide4 {
                 background: url(/img/services/aircon/beforeafter/4.jpg) center / contain no-repeat;
             }
+        }
+    }
+    .works {
+        a {
+            text-decoration: underline;
+        }
+        section {
+            margin: 1rem 0;
+            h1 {
+                border-bottom: 0.1rem solid $color-green;
+                border-left: 0.5rem solid $color-green;
+                padding-left: 0.3rem;
+                text-align: left;
+                font-size: 1.1rem;
+            }
+            h2 {
+                border-bottom: none;
+                border-left: 0.5rem solid lighten($color-green, 10%);
+                margin: 0;
+                padding-left: 0.3rem;
+                font-size: 1rem;
+            }
+            dl {
+                margin: 0.5rem 0.3rem;
+                dt {
+                    border-left: none;
+                    margin: 0.2rem 0;
+                    padding-left: 0;
+                }
+            }
+            dl.description {
+                margin: 1rem 0;
+                dt:before {
+                    content: "\f046";
+                    font-family: FontAwesome;
+                    padding-right: 0.3rem;
+                }
+            }
+            dl.menu {
+                dt:before {
+                    content: "\f111";
+                    font-family: FontAwesome;
+                    padding-right: 0.3rem;
+                }
+                dd dt:before {
+                    font-size: 0.5rem;
+                }
+            }
+        }
+    }
+    .prices {
+        a {
+            text-decoration: underline;
+        }
+        .message {
+            margin: 1rem 0;
         }
     }
 }
