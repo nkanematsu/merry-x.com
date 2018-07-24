@@ -16,6 +16,18 @@ main.index {
 
     .contents {
         .main {
+            .heading {
+                margin-bottom: 1rem;
+                ul {
+                    list-style: none;
+                    li {
+                        padding: 0.2rem 0;
+                        .title {
+                            padding-left: 1rem;
+                        }
+                    }
+                }
+            }
             .services {
                 display: flex;
                 flex-wrap: wrap;

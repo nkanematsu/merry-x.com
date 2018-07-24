@@ -28,6 +28,18 @@
             <div class="contents">
                 <%= render 'shared/nav' %>
                 <div class="main">
+                    <div class="heading">
+                        <h2>お知らせ</h2>
+                        <ul>
+                        <% @articles.each do |article| %>
+                            <li>
+                                <a href="<%= article_path(article) %>">
+                                    <%= l article.created_at %><span class="title"><%= article.title %></span>
+                                </a>
+                            </li>
+                        <% end %>
+                        </ul>
+                    </div>
                     <ul class="services">
                         <li class="service">
                             <a href="/office">

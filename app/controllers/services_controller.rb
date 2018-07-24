@@ -1,5 +1,6 @@
 class ServicesController < ApplicationController
   def index
+    @articles = Article.where(published: true).limit(5).order(created_at: 'desc')
   end
 
   def office
